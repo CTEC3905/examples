@@ -8,7 +8,7 @@
 
       img {
         max-height: 400px;
-        max-width: 900px;
+        max-width: 400px;
       }
 
       figure {
@@ -17,6 +17,14 @@
       figcaption {
         padding: 1em 0;
         text-align: center;
+        max-width: 400px;
+        margin-bottom: 0;
+      }
+      figure p {
+        background-color: #ccc;
+        padding: 0;
+        max-width: 400px;
+        margin: 0 0 1em 0;
       }
 
     </style>
@@ -24,168 +32,271 @@
 
 <body>
 
-  <h1>CTEC3905 Past Student Work</h1>
+  <header>
+    <h1>CTEC3905 Past Student Work</h1>
 
-  <p>Here are some examples of the kind of work students have produced in previous years. I've put them into rough categories so you get an idea of how these websites were marked.</p>
+    <p>Here are some examples of the kind of work students have produced in previous years. I've put them into rough categories so you get an idea of how these websites were marked.</p>
 
-  <p>Overall:</p>  
-  <ul>
-    <li>pass-rate was 96%</li>
-    <li>average grade was 64%</li>
-    <li>73/181 had firsts</li>
-  </ul>
+    <p>Overall:</p>  
+    <ul>
+      <li>pass-rate was 96%</li>
+      <li>average grade was 64%</li>
+      <li>73/181 had firsts</li>
+    </ul>
 
-  <p>I will go through the marking criteria and show examples of each of the three categories ("not addressed", "partially addressed", and "fully addressed") for each of the points.</p>
+    <p>I will go through the marking criteria and show examples of each of the three categories ("not addressed", "partially addressed", and "fully addressed") for each of the points.</p>
+  </header>
 
+  <hr>
 
+  <section>
+    <h2>Screenshots of overall design</h2>
 
-  <h2>1. HTML and CSS Code Quality</h2>
+    
 
-  <h3>1.1. Valid HTML5 and CSS3 source code throughout</h3> 
+  </section>
 
-  <p>Try and fix any errors and address warnings that are raised by the validator. Mostly this will catch serious syntax errors but it also points the way to good practice in general.</p>
+  <hr>
 
-  
+  <section>
+    <h2>1. HTML and CSS Code Quality</h2>
 
+    <h3>1.1. Valid HTML5 and CSS3 source code throughout</h3> 
 
+    <p>Try and fix any errors and address warnings that are raised by the validator. Mostly this will catch serious syntax errors but it also points the way to good practice in general.</p>
 
-  <h3>1.2. Consistent code nesting and indentation (2 spaces is industry-standard)</h3>
+    
 
 
 
+    <h3>1.2. Consistent code nesting and indentation (2 spaces is industry-standard)</h3>
 
+    <figure>
+      <img src="screenshots/indentation0.png">
+      <figcaption>not addressed</figcaption>
+    </figure>
 
+    <figure>
+      <img src="screenshots/indentation0-1.png">
+      <figcaption>not addressed</figcaption>
+    </figure>
 
+    <figure>
+      <img src="screenshots/indentation1.png">
+      <figcaption>partially addressed</figcaption>
+    </figure>
 
+    <figure>
+      <img src="screenshots/indentation2.png">
+      <figcaption>fully addressed</figcaption>
+    </figure>
 
 
 
 
 
 
-  <h3>1.3. Separate .css and .js files (e.g. no "style=" or "onclick" in HTML)</h3>
 
 
-  <h3>1.4. Use of CSS3 features e.g. flexbox, animations, CSS grid</h3>
 
 
-  <h3>1.5. Tidy file and folder organisation with lower-case names</h3>
 
-  <p>This should be fairly self-explanatory. Keep file and folder names lower-case and don't include any spaces or underscores (use hyphens if necessary). We normally expect you to keep your images, CSS, and JS files in a separate folder each. Don't include any unused files you used during development. Clean the repository for your final commit. Your main homepage must be called "index.html". This is necessary for GitHub Pages to work and most web servers too.</p>
+    <h3>1.3. Separate .css and .js files (e.g. no "style=" or "onclick" in HTML)</h3>
 
-  <figure>
-    <img src="screenshots/dir0.png">
-    <figcaption>not addressed</figcaption>
-  </figure>
+    <p>This is largely marked on amount of inline logic in the HTML. So for instance one occurance of "onclick" or a "width" declaration inside an <code><img></code> tag would be considered "partially addressed". Several instances of this would be "not addressed" and of course no inline styles or scripts would be "fully addressed".</p>
+    <p>The examples below are taken out of context of the whole repository so I can't really show the grading element for these fairly. Suffice to say inline styles and scripts like these should not happen ever.</p>
 
-  <figure>
-    <img src="screenshots/dir0-1.png">
-    <figcaption>not addressed</figcaption>
-  </figure>
+    <figure>
+      <img src="screenshots/inline0.png">
+      <figcaption>depends on overall number</figcaption>
+    </figure>
 
-  <figure>
-    <img src="screenshots/dir1.png">
-    <figcaption>partially addressed</figcaption>
-  </figure>
+    <figure>
+      <img src="screenshots/inline0-1.png">
+      <figcaption>not addressed</figcaption>
+    </figure>
 
-  <figure>
-    <img src="screenshots/dir1-1.png">
-    <figcaption>partially addressed</figcaption>
-  </figure>
+    <figure>
+      <img src="screenshots/silly0-1.png">
+      <figcaption>partially addressed</figcaption>
+    </figure>
 
-  <figure>
-    <img src="screenshots/dir2.png">
-    <figcaption>fully addressed</figcaption>
-  </figure>
+    <figure>
+      <img src="screenshots/silly0-3.png">
+      <figcaption>depends on overall number</figcaption>
+    </figure>
 
-  <figure>
-    <img src="screenshots/dir2-1.png">
-    <figcaption>fully addressed</figcaption>
-  </figure>
 
-  <figure>
-    <img src="screenshots/dir2-2.png">
-    <figcaption>fully addressed</figcaption>
-  </figure>
+    <h3>1.4. Use of CSS3 features e.g. flexbox, animations, CSS grid</h3>
 
+    <p>This largely depends on the number of examples found in the code.</p>
 
-  ### 2\. JavaScript, APIs & JSON
 
-  1. No JavaScript errors in the browser console
-  2. Use of JavaScript for DOM manipulation and/or interaction
-  3. ES6 syntax: e.g.  "let" and "const" over "var", template literals, arrow functions
-  4. Use of JavaScript to handle data (e.g. JSON from an external API)
-  5. DRY code e.g. no repeated similar functions without parameters
+    <h3>1.5. Tidy file and folder organisation with lower-case names</h3>
 
+    <p>This should be fairly self-explanatory. Keep file and folder names lower-case and don't include any spaces or underscores (use hyphens if necessary). We normally expect you to keep your images, CSS, and JS files in a separate folder each. Don't include any unused files you used during development. Clean the repository for your final commit. Your main homepage must be called "index.html". This is necessary for GitHub Pages to work and most web servers too.</p>
 
-  ### 3\. Responsiveness, Accessibility and Interaction
+    <figure>
+      <img src="screenshots/dir0.png">
+      <figcaption>not addressed</figcaption>
+    </figure>
+    <figure>
+      <img src="screenshots/dir0-1.png">
+      <figcaption>not addressed</figcaption>
+    </figure>
 
-  1. Responsive at any size with mobile-first CSS breakpoints
-  2. Well-ordered information architecture, ease of navigation at all sizes
-  3. Web accessibility (e.g. HTML5 semantic elements, "alt" attributes, heading structure, etc.)
-  4. Coherence of overall design - colour, content, styles, etc.
-  5. CSS layout of HTML5 elements e.g. no tables
+    <figure>
+      <img src="screenshots/dir0-2.png">
+      <figcaption>not addressed</figcaption>
+    </figure>
 
+    <figure>
+      <img src="screenshots/dir1.png">
+      <figcaption>partially addressed</figcaption>
+    </figure>
 
-  ### 4\. GIT & GitHub
+    <figure>
+      <img src="screenshots/dir1-1.png">
+      <figcaption>partially addressed</figcaption>
+    </figure>
 
-  1. Source code and live site on GitHub Pages
-  2. Use of GIT branches for feature development
-  3. Regular commits, not all last few days
-  4. Brief, informative commit messages
-  5. Basic readme.md file with references in markdown format (see NOTES)
+    <figure>
+      <img src="screenshots/dir2.png">
+      <figcaption>fully addressed</figcaption>
+    </figure>
 
-  ---
+    <figure>
+      <img src="screenshots/dir2-1.png">
+      <figcaption>fully addressed</figcaption>
+    </figure>
 
-  ### NOTES
+    <figure>
+      <img src="screenshots/dir2-2.png">
+      <figcaption>fully addressed</figcaption>
+    </figure>
+  </section>
 
-  - use only native code e.g. no JQuery, Bootstrap, etc. although external assets are acceptable (images, FontAwesome and Google fonts)
-  - in your GIT readme file, you should include consistently-formatted references to any external learning resources you have used
-  - make sure your GitHub repository code is private and only visible to you (teaching and other admin staff are are already granted access)
+  <hr>
 
+  <section>
+    <h2>2. JavaScript, APIs & JSON</h2>
 
+    <h3>2.1. No JavaScript errors in the browser console</h3>
 
 
 
+    <h3>2.2. Use of JavaScript for DOM manipulation and/or interaction</h3>
 
 
+    <h3>2.3. ES6 syntax: e.g.  "let" and "const" over "var", template literals, arrow functions</h3>
 
-  ## Fails
 
+    <h3>2.4. Use of JavaScript to handle data (e.g. JSON from an external API)</h3>
 
 
+    <h3>2.5. DRY code e.g. no repeated similar functions without parameters</h3>
 
-  ### Student 1
+    <figure>
+      <img src="screenshots/dry0.png">
+      <figcaption></figcaption>
+    </figure>
 
-  - 4 commits all on day of deadline
-  - images loose in folder
-  - 2 empty css files
-  - inline styles
-  - onclick JS
-  - inline JS that doesn't do anything
-  - non-semantic elements
-  - empty readme
-  - no responsiveness
+  </section>
 
+  <hr>
 
-  ### Student 2
+  <section>
+    <h2>3. Responsiveness, Accessibility and Interaction</h2>
 
-  - 22 commits all on day of deadline
-  - weird progress files?
-  - empty readme
-  - very minimal JS
-  - very basic css
-  - no responsiveness
-  - lots of typos in code
-  - 
+    1. Responsive at any size with mobile-first CSS breakpoints
+    2. Well-ordered information architecture, ease of navigation at all sizes
+    3. Web accessibility (e.g. HTML5 semantic elements, "alt" attributes, heading structure, etc.)
+    4. Coherence of overall design - colour, content, styles, etc.
+    5. CSS layout of HTML5 elements e.g. no tables
+  </section>
 
+  <hr>
 
+  <section>
+    <h2>4. GIT & GitHub</h2>
+
+    1. Source code and live site on GitHub Pages
+    2. Use of GIT branches for feature development
+    3. Regular commits, not all last few days
+    4. Brief, informative commit messages
+    5. Basic readme.md file with references in markdown format (see NOTES)
+  </section>
+
+  <hr>
+
+  <footer>
+    <h2>General Notes</h2>
+
+    - use only native code e.g. no JQuery, Bootstrap, etc. although external assets are acceptable (images, FontAwesome and Google fonts)
+    - in your GIT readme file, you should include consistently-formatted references to any external learning resources you have used
+    - make sure your GitHub repository code is private and only visible to you (teaching and other admin staff are are already granted access)
+
+    <figure>
+      <img src="screenshots/silly0.png">
+      <figcaption>redundant class</figcaption>
+      <p>really no need to add a class to the table data tags, just style them directly</p>
+    </figure>
+
+    <figure>
+      <img src="screenshots/silly0-2.png">
+      <figcaption>lots of redundat code</figcaption>
+      <p>note the strange indentation (probably tabs rather than spaces used), the amount of reduncant code (e.g. the menu div is completely unnecessary) often the HTML tag can be styled directly without a class or id. no real need to make the menu a <code><ul></code> either.</p>
+    </figure>
+
+    <figure>
+      <img src="screenshots/silly0-4.png">
+      <figcaption>messy</figcaption>
+      <p>note inconsistent indentation, the inline styles at the top, inline script in the middle (although fairly well commented), and the <code><br></code> tags at the bottom for layout (you should use CSS to pad things out)</p>
+    </figure>
+
+    <figure>
+      <img src="screenshots/silly0-5.png">
+      <figcaption>messy</figcaption>
+      <p>note the "max-width" and "width" inline styles at the top, and inline script below (although fairly well commented)</p>
+    </figure>
+
+
+
+
+    FAILS
+
+    ### Student 1
+
+    - 4 commits all on day of deadline
+    - images loose in folder
+    - 2 empty css files
+    - inline styles
+    - onclick JS
+    - inline JS that doesn't do anything
+    - non-semantic elements
+    - empty readme
+    - no responsiveness
+
+
+    ### Student 2
+
+    - 22 commits all on day of deadline
+    - weird progress files?
+    - empty readme
+    - very minimal JS
+    - very basic css
+    - no responsiveness
+    - lots of typos in code
+    - 
+
+  </footer>
 
 
   <script>
 
     const captions = document.getElementsByTagName("figcaption");
     for(let i=0; i < captions.length; i++) {
+      captions[i].style.backgroundColor = "gray";
       if(captions[i].innerHTML === "not addressed") {
         captions[i].style.backgroundColor = "red";
       }
