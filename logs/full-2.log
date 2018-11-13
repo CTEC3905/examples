@@ -1,0 +1,157 @@
+* de45d19  |  Sun 31 Dec 2017	 (HEAD -> master, origin/master, origin/HEAD) |  Typo error fix ! (should be right-handed instead of left-handed)
+* b40adc8  |  Sat 30 Dec 2017	 |  Finished README
+* 5314942  |  Fri 29 Dec 2017	 |  Added content to README + added site diagram and questionnaire
+* 5479d96  |  Fri 29 Dec 2017	 |  Added more references to README
+* 9110f4c  |  Fri 29 Dec 2017	 |  Added references to README
+* 1aa9b04  |  Fri 29 Dec 2017	 |  Added screen design PDFs
+* 182541e  |  Fri 29 Dec 2017	 |  Added screen design + sorted out image CSS animations for tablet and desktop sizes
+* 3291ab6  |  Fri 29 Dec 2017	 |  Added concept vehicle images and created CSS flip animation on 'The Future' page
+* 8ef033e  |  Fri 29 Dec 2017	 |  Added comments + sorted order of CSS styles
+* 50c3c60  |  Fri 29 Dec 2017	 |  Beautified code
+* 725d932  |  Fri 29 Dec 2017	 |  Added content to timeline feature
+* bb7f311  |  Fri 29 Dec 2017	 |  Added timeline feature to 'History' page
+* 7c5ca5a  |  Fri 29 Dec 2017	 |  Added 3D flip images to 'Upcoming Models
+* adfcc4f  |  Fri 29 Dec 2017	 |  Added nth child to 'The Future' page
+* b5d8011  |  Fri 29 Dec 2017	 |  Set up the 'Future' page
+* d33be93  |  Fri 29 Dec 2017	 |  Added borders to Flickr images
+*   571c90f  |  Fri 29 Dec 2017	 |  Merge pull request #5 from USER/BRANCH
+|\  
+| * 0a7474e  |  Fri 29 Dec 2017	 |  Sorted 'Aside' element sizing out + moved arrow-to-top button to footer
+| * ed7d219  |  Fri 29 Dec 2017	 |  Modified styles for Flickr Search section
+| * b70e5c9  |  Fri 29 Dec 2017	 |  Added Flickr search API feature
+|/  
+* d925f29  |  Thu 28 Dec 2017	 |  Added link that goes to top of page- on all pages
+* 6f5a88a  |  Thu 28 Dec 2017	 |  Added visual styles to the Article and Aside elements
+* 1b3789b  |  Thu 28 Dec 2017	 |  Added text to all image figcaptions
+* b591aa1  |  Thu 28 Dec 2017	 |  Added figures to all car model images
+* dc442e7  |  Thu 28 Dec 2017	 |  Sorted out <figure> sizing for Audi model images
+* 91cb134  |  Thu 28 Dec 2017	 |  Added <figcaption> to the Audi model images
+* baaac2f  |  Thu 28 Dec 2017	 |  Added popup overlay for car models
+* e63b624  |  Thu 28 Dec 2017	 |  Added ARIA roles to Audi model images
+* 74d6deb  |  Thu 28 Dec 2017	 |  Fixed popup search bar sizing issue on some pages
+* c788ab8  |  Wed 27 Dec 2017	 |  Replaced Audi model images
+* cbd328b  |  Wed 27 Dec 2017	 |  Made few changes to article and aside divs
+* ed4578a  |  Wed 27 Dec 2017	 |  Set up responsive Audi model image divs with floats
+* c3ad520  |  Wed 27 Dec 2017	 |  Added all Audi model images
+* aecaef7  |  Wed 27 Dec 2017	 |  Added divs to hold the Audi model images
+* aaa96e8  |  Wed 27 Dec 2017	 |  Added Audi A1 image to 'Current Lineup' page
+* 751305a  |  Wed 27 Dec 2017	 |  Added <article> and <aside> tags to the 'Current Lineup' page
+*   8e11ff3  |  Wed 27 Dec 2017	 |  Merge pull request #4 from USER/BRANCH
+|\  
+| * 239a87b  |  Wed 27 Dec 2017	 |  Added missing alt tags to slideshow images
+| * de765fe  |  Wed 27 Dec 2017	 |  Changed size of slideshow arrow button on screen change
+| * 028d855  |  Wed 27 Dec 2017	 |  Fixed element not found in HTML issue in JS file
+| * 910e113  |  Wed 27 Dec 2017	 |  Fixed slideshow arrow button issue
+| * 22cfe1c  |  Tue 26 Dec 2017	 |  Added slideshow images and formatted arrow buttons
+| * 5b6a345  |  Tue 26 Dec 2017	 |  Sorted out slideshow button positioning
+| * 8136068  |  Tue 26 Dec 2017	 |  Added slideshow code to 'Gallery' page
+|/  
+* 305b33e  |  Tue 26 Dec 2017	 |  Removed redundant script references + updated README
+* 4c47ebe  |  Tue 26 Dec 2017	 |  Sorted out Audi factory images on 'Gallery' page
+* e0bf42a  |  Tue 26 Dec 2017	 |  Added Audi factory images to HTML
+* 4765a1b  |  Mon 25 Dec 2017	 |  Added Audi factory images to 'Gallery' page
+* c823b8f  |  Mon 25 Dec 2017	 |  Added few ARIA features
+* 7e28474  |  Mon 25 Dec 2017	 |  Restructured CSS, removed redundant code
+* 3c932a3  |  Mon 25 Dec 2017	 |  Set up all other web pages based on the homepage
+* 434cbd4  |  Mon 25 Dec 2017	 |  Modified section text on homepage
+* cb8097d  |  Mon 25 Dec 2017	 |  Cleaned up indentation, added tooltips to social media icons
+* a711fb0  |  Sun 24 Dec 2017	 |  Cleaned up code, added 'Home' to sitemap- homepage is complete!
+* 39538b0  |  Sun 24 Dec 2017	 |  Sorted out popup modal search bar + deleted redundant social media icons
+* 44e191c  |  Sun 24 Dec 2017	 |  Small modifications to popup search bar
+* 6aa0c81  |  Sun 24 Dec 2017	 |  Changed most font sizes to 'em' unit and modified search button
+* b595e6e  |  Mon 18 Dec 2017	 |  Still working on pop up search bar
+* b87554e  |  Mon 18 Dec 2017	 |  Added popup overlay that will hold search bar
+* ff96227  |  Mon 18 Dec 2017	 |  Added comments to JS file and gave images on homepage more descriptive alt tags
+* a165fb7  |  Mon 18 Dec 2017	 |  Removed redundant search bar function from JS
+* 073917e  |  Sun 17 Dec 2017	 |  Sorted social media icons size for mobile view
+* 7d72566  |  Sun 17 Dec 2017	 |  Added sitemap
+* 01fe4cf  |  Sun 17 Dec 2017	 |  Sorted nav bar menu size in medium view + added new breakpoint
+* 8456bd9  |  Sun 17 Dec 2017	 |  Sorted nav bar menu size out in desktop view
+* 8f903cb  |  Sun 17 Dec 2017	 |  Commented and cleaned up code
+* c0cb8ef  |  Sun 17 Dec 2017	 |  Changed colours and sizes of social media icons
+* da37bbb  |  Sun 17 Dec 2017	 |  Set up HTML video on homepage and removed <iframe> video elements
+* 7a3e6e8  |  Sun 17 Dec 2017	 |  Changed dimensions of nav links to make better use of space
+* dc3b4a0  |  Sun 17 Dec 2017	 |  Added border colours upon hover to social media icons
+* c68b0bf  |  Sun 17 Dec 2017	 |  Renamed icons added
+* 05d321c  |  Sun 17 Dec 2017	 |  Renamed images
+* f85b59f  |  Sat 16 Dec 2017	 |  Set the black&white images as the default icons
+* 1f54c84  |  Sat 16 Dec 2017	 |  Added black&white social media icons
+* e475d26  |  Sat 16 Dec 2017	 |  Social media icons on Dekstop view layout complete
+* 82eed8f  |  Sat 16 Dec 2017	 |  Modified social media icons layout in mobile and desktop view
+* 3ba9335  |  Sat 16 Dec 2017	 |  Resolved missing CSS style bracket
+* 0167464  |  Sat 16 Dec 2017	 |  Deleted redundant styles
+*   8a66da7  |  Sat 16 Dec 2017	 |  Merge pull request #3 from USER/BRANCH
+|\  
+| *   3beb1ca  |  Sat 16 Dec 2017	 |  Merge branch 'master' into header_and_navigation
+| |\  
+| |/  
+|/|   
+| * 7817fe7  |  Sat 16 Dec 2017	 |  Sorted out search bar sizing for mobile view
+| * 2a56e65  |  Sat 16 Dec 2017	 |  Sorted out search bar for desktop and tablet views
+| * dd173a2  |  Sat 16 Dec 2017	 |  Refactored/Cleaned up JavaScript code
+| * 946f75a  |  Sat 16 Dec 2017	 |  Managed to get the social media div to move to another div via the JS appendChild method
+| * a0cefe1  |  Wed 13 Dec 2017	 |  Modified social media icons to be positioned responsively
+| * 7000530  |  Tue 12 Dec 2017	 |  Moved social media and nav bar to <header> section to improve chances of responsiveness
+* | ba33967  |  Tue 12 Dec 2017	 |  Cleaned up CSS code (formatting and layout)
+* | 8d5360f  |  Tue 12 Dec 2017	 |  Added functionality that toggles visibility of search bar
+|/  
+* 37e113e  |  Tue 12 Dec 2017	 |  Added comments to all files
+* fdddb32  |  Tue 12 Dec 2017	 |  Search bar looks much better now
+* 43e2ad9  |  Mon 11 Dec 2017	 |  Partly fixed navigation bar text that was resizing incorrectly
+* 9e3ba68  |  Mon 11 Dec 2017	 |  Added border radii to elements and cleaned up CSS code
+* c8c658e  |  Mon 11 Dec 2017	 |  Added few visual touches to hamburger menu and header text
+* b8b194d  |  Mon 11 Dec 2017	 |  Overhauled entire colour scheme to match the Audi theme
+* 85365b8  |  Mon 11 Dec 2017	 |  Embedded video sizes look better
+* dec30e5  |  Mon 11 Dec 2017	 |  Modified search bar to make it responsive
+* 01b28f3  |  Mon 11 Dec 2017	 |  Top 'header' and search bar sizes better
+*   8b76a6f  |  Mon 11 Dec 2017	 |  Merge pull request #2 from USER/BRANCH
+|\  
+| * 0abaa8b  |  Mon 11 Dec 2017	 |  social media icons setup complete
+| * c2c0974  |  Mon 11 Dec 2017	 |  Moved social media section to footer, added new social media icons
+| * f01ad36  |  Mon 11 Dec 2017	 |  Set up social media icons on homepage
+| * 6a3c850  |  Mon 11 Dec 2017	 |  Renamed image files and set up hyperlinks for social media icons
+| * a7bcdc1  |  Mon 11 Dec 2017	 |  Added social media icons to project
+|/  
+* d54b7b3  |  Mon 11 Dec 2017	 |  Modified the search bar dimensions
+* 0c8da19  |  Mon 11 Dec 2017	 |  Embedded YouTube videos on homepage via <iframe> tag
+* 78cced0  |  Mon 11 Dec 2017	 |  Added hamburger menu icon
+* 439465b  |  Mon 11 Dec 2017	 |  Made CSS adjustments to the header content on the homepage
+* 1f40412  |  Mon 11 Dec 2017	 |  Search bar icon on homepage now displaying
+* 4deee7a  |  Mon 11 Dec 2017	 |  Added search bar
+* 8f658eb  |  Mon 11 Dec 2017	 |  Modified flexbox layout on homepage
+* 16a873e  |  Sun 10 Dec 2017	 |  Fixed Google Maps marker resizing issue
+* 741af62  |  Sun 10 Dec 2017	 |  Set up the videos sections on the homepage to embed HTML videos
+*   583e249  |  Sun 10 Dec 2017	 |  Merge pull request #1 from USER/BRANCH
+|\  
+| * e7012ea  |  Sun 10 Dec 2017	 |  Added map location info to Google Maps JavaScript code
+| * 130cb0b  |  Sun 10 Dec 2017	 |  Google Maps API and maps implemented successfully
+|/  
+* 6d1a2ac  |  Sun 10 Dec 2017	 |  Replaced homepage banner image
+* fd35cdd  |  Sat 09 Dec 2017	 |  Added content to 'main' on homepage
+* 6298f4d  |  Sat 09 Dec 2017	 |  Resized banner image and edited homepage styles
+* a58f8da  |  Sat 09 Dec 2017	 |  Added search icon and resized header and footer
+* 4b63410  |  Fri 08 Dec 2017	 |  Added few comments and homepage banner image
+* 73a50cb  |  Fri 08 Dec 2017	 |  Added semantic elements and footer content to 'Index.html' page
+* a2a1e0a  |  Fri 08 Dec 2017	 |  Removed 'Top5' page and renamed few elements to include hyphens
+* 371b284  |  Tue 05 Dec 2017	 |  Deleted 'About' page
+* a735d2c  |  Mon 04 Dec 2017	 |  Created and added site logo
+*   a2c97e9  |  Mon 04 Dec 2017	 |  Merge branch 'master' of https://github.com/USER/CTEC3905-REPO
+|\  
+* | 1e94c80  |  Mon 04 Dec 2017	 |  Added 'USability' content to the REAMDE file
+| * 4807e18  |  Mon 04 Dec 2017	 |  Added 'Usability' content to the REAMDE file
+|/  
+* efffefe  |  Mon 04 Dec 2017	 |  Added Intro to README and added section headings
+* 99bbcd4  |  Tue 28 Nov 2017	 |  Renamed file paths for logo image and the 'Contact' page
+* e080961  |  Tue 21 Nov 2017	 |  Deleted 'Contact' page
+* c022897  |  Tue 21 Nov 2017	 |  Changed file names to remove underscores
+* c2e7f8d  |  Mon 20 Nov 2017	 |  Modified the page titles
+* b90b44c  |  Mon 20 Nov 2017	 |  Added site logo
+* 699433a  |  Mon 20 Nov 2017	 |  Added the font-family
+* ac41fe7  |  Mon 20 Nov 2017	 |  Added script tags to connect HTML files to the JavaScript file
+* d0d4988  |  Mon 20 Nov 2017	 |  Added all pages and connected them together
+* 865e199  |  Sun 19 Nov 2017	 |  Added 'About' page
+* 6d8ba55  |  Sun 19 Nov 2017	 |  Added a navigation menu; added breakpoints to CSS
+* 5127d05  |  Sun 19 Nov 2017	 |  Added HTML meta and language tags
+* 45bfcba  |  Sun 19 Nov 2017	 |  Set up file structure
+* b3ec8eb  |  Sun 19 Nov 2017	 |  Created README file
+* 776ff36  |  Sun 19 Nov 2017	 |  Initial commit

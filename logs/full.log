@@ -1,0 +1,36 @@
+* 7115b67  |  Fri 29 Dec 2017	 (HEAD -> master, origin/master, origin/HEAD) |  final product
+* b276813  |  Thu 28 Dec 2017	 |  finished readme file and added final comments to code
+* 8c6dd84  |  Thu 28 Dec 2017	 |  fixing markdown in readme file
+* a8c6392  |  Thu 28 Dec 2017	 |  fixing markdown in readme file
+* 8544c72  |  Thu 28 Dec 2017	 |  fixing markdown in readme file
+* 04c185d  |  Thu 28 Dec 2017	 |  fixing markdown in readme file
+* 38be04b  |  Thu 28 Dec 2017	 |  adding to readme file
+* 88b25a4  |  Thu 28 Dec 2017	 |  seeing is this adds a image to the readme file
+* 1100b9d  |  Thu 28 Dec 2017	 |  seeing is this adds a image to the readme file
+* 675e04f  |  Wed 20 Dec 2017	 |  created a README.md file
+* 1b7e821  |  Sat 16 Dec 2017	 |  added tablet sizing
+* ac76568  |  Sat 16 Dec 2017	 |  fixed an issue with the accordion
+* 18d811c  |  Sat 16 Dec 2017	 |  added a accordion to thin out the pages content length
+* c2c95df  |  Fri 15 Dec 2017	 |  fixed the nav for mobile screen
+* e9d7af0  |  Fri 15 Dec 2017	 |  fixed the nav for mobile screen
+* b3b08a6  |  Wed 13 Dec 2017	 |  updated map sizing to be larger on mobile devices
+* 7fec62a  |  Wed 13 Dec 2017	 |  added a google maps api
+* 4851439  |  Wed 13 Dec 2017	 |  added a hamburger menu for mobile devices
+* 19a39b4  |  Mon 11 Dec 2017	 |  getting ready to the final product
+* 3c261fd  |  Mon 11 Dec 2017	 |  changed color scheme
+* f6b4846  |  Mon 11 Dec 2017	 |  finally made it proper mobile first styling
+* 3b709e7  |  Sun 10 Dec 2017	 |  finally fixed the rotated text overlapping issue! also removed BG-color and adjusted box shadowing
+* c04e912  |  Sat 09 Dec 2017	 |  added some nav bar styles
+* 955172a  |  Thu 07 Dec 2017	 |  changed fonts and adjusted for mobile & desktop sizes. also commented out smooth scroll out in main.js
+* f0eecbc  |  Wed 06 Dec 2017	 |  added a footer and linked to my social media accounts
+* d61c29e  |  Wed 06 Dec 2017	 |  hidden header image for mobile devices
+* 777f081  |  Wed 06 Dec 2017	 |  got the sticky nav bar to work
+* 09521f9  |  Tue 05 Dec 2017	 |  added a header image and removed the fixed nav in preparation to make a sticky nav bar in JS
+* c42b9d3  |  Tue 05 Dec 2017	 |  added icons to the profile lists and almost finished up desktop sizing
+* 20897d6  |  Wed 29 Nov 2017	 (origin/mobileBranch) |  got rid of validator errors to do with the nav bar & began positioning desktop styles
+* 0967d50  |  Tue 28 Nov 2017	 |  happy with the mobile styling, final commit before moving onto the desktop sizes
+* a69823e  |  Wed 22 Nov 2017	 |  added basic nav menu in HTML and set it to jump to a spot on the page, tried to animate in JS but fialed so far
+* e6f8759  |  Wed 22 Nov 2017	 |  changed CSS to be mobile first
+* a68f111  |  Wed 15 Nov 2017	 |  added some bulk to the content in html including some tables
+* 29b68df  |  Tue 14 Nov 2017	 |  added some initial content to the HTML file, also some rough styles
+* 1ca3de9  |  Sun 05 Nov 2017	 |  set up HTMl, CSS & JS files with test content to check they're all linked correctly

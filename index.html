@@ -4,30 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Examples</title>
-    <style>
-
-      img {
-        max-height: 400px;
-        max-width: 400px;
-      }
-
-      figure {
-        display: inline-block;
-      }
-      figcaption {
-        padding: 1em 0;
-        text-align: center;
-        max-width: 400px;
-        margin-bottom: 0;
-      }
-      figure p {
-        background-color: #ccc;
-        padding: 0;
-        max-width: 400px;
-        margin: 0 0 1em 0;
-      }
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
 
 <body>
@@ -52,11 +29,13 @@
   <section>
     <h2>Screenshots of overall design</h2>
 
+    <p>Here are some examples of student work from the previous two years, with a rough idea of how they were marked overall.</p>
+    <p>Please note that this <strong>only shows how the pages look</strong>, it <strong>doesn't show any animations or hover effects</strong>, and most of all it <strong>does not show the quality of the code</strong>. So some of the pages are marked higher or lower overall perhaps than you might expect due to underlying issues with the code. This includes for example <strong>API calls</strong> that bring in content dynamically from external sources which might not be clear from simply looking at the final design of the website.</p>
+
     <figure>
       <img src="screenshots/website10-20.gif">
       <figcaption>10-20</figcaption>
     </figure>
-
     <figure>
       <img src="screenshots/website30-40.gif">
       <figcaption>30-40</figcaption>
@@ -66,17 +45,14 @@
       <img src="screenshots/website40-50.gif">
       <figcaption>40-50</figcaption>
     </figure>
-
     <figure>
       <img src="screenshots/website50-60.gif">
       <figcaption>50-60</figcaption>
     </figure>
-
     <figure>
       <img src="screenshots/website60-70.gif">
       <figcaption>60-70</figcaption>
     </figure>
-
     <figure>
       <img src="screenshots/website60-70-1.gif">
       <figcaption>60-70</figcaption>
@@ -86,17 +62,14 @@
       <img src="screenshots/website70-80.gif">
       <figcaption>70-80</figcaption>
     </figure>
-
     <figure>
       <img src="screenshots/website90-100-1.gif">
       <figcaption>90-100</figcaption>
     </figure>
-
     <figure>
       <img src="screenshots/website90-100-2.gif">
       <figcaption>90-100</figcaption>
     </figure>
-
     <figure>
       <img src="screenshots/website90-100.gif">
       <figcaption>90-100</figcaption>
@@ -110,12 +83,7 @@
     <h2>1. HTML and CSS Code Quality</h2>
 
     <h3>1.1. Valid HTML5 and CSS3 source code throughout</h3> 
-
     <p>Try and fix any errors and address warnings that are raised by the validator. Mostly this will catch serious syntax errors but it also points the way to good practice in general.</p>
-
-    
-
-
 
     <h3>1.2. Consistent code nesting and indentation (2 spaces is industry-standard)</h3>
 
@@ -123,7 +91,6 @@
       <img src="screenshots/indentation0.png">
       <figcaption>not addressed</figcaption>
     </figure>
-
     <figure>
       <img src="screenshots/indentation0-1.png">
       <figcaption>not addressed</figcaption>
@@ -140,48 +107,39 @@
     </figure>
 
 
-
-
-
-
-
-
-
-
-
     <h3>1.3. Separate .css and .js files (e.g. no "style=" or "onclick" in HTML)</h3>
-
-    <p>This is largely marked on amount of inline logic in the HTML. So for instance one occurance of "onclick" or a "width" declaration inside an <code><img></code> tag would be considered "partially addressed". Several instances of this would be "not addressed" and of course no inline styles or scripts would be "fully addressed".</p>
+    <p>This is largely marked on amount of inline logic in the HTML. So for instance one occurance of "onclick" or a "width" declaration inside an <code>&lt;img&gt;</code> tag would be considered "partially addressed". Several instances of this would be "not addressed" and of course no inline styles or scripts would be "fully addressed".</p>
     <p>The examples below are taken out of context of the whole repository so I can't really show the grading element for these fairly. Suffice to say inline styles and scripts like these should not happen ever.</p>
 
     <figure>
       <img src="screenshots/inline0.png">
       <figcaption>depends on overall number</figcaption>
+      <p>note missing video tag instead of div, inline styles ("align" marked in red), spaces between attributes and values (e.g. <code>class = "VideoEmbed"</code> instead of <code>class="VideoEmbed"</code>), inline JS (onclick instead of eventListener)</p>
     </figure>
 
     <figure>
       <img src="screenshots/inline0-1.png">
       <figcaption>not addressed</figcaption>
+      <p>note excessive use of onclick, inline styles, the div with class "tab" should simply be a <code>&lt;nav&gt;</code> tag, the section with class "mainbody" should be a <code>&lt;main&gt;</code> tag</p>
     </figure>
 
     <figure>
       <img src="screenshots/silly0-1.png">
       <figcaption>depends on overall number</figcaption>
+      <p>note the setting of background colour inline and also the div with class "Header" should be a <code>&lt;header&gt;</code> tag, and the <code>&lt;b&gt;</code> tag should be a <code>&lt;strong&gt;</code> tag instead</p>
     </figure>
 
     <figure>
       <img src="screenshots/silly0-3.png">
       <figcaption>depends on overall number</figcaption>
+      <p>note line 51 shows a syntax error of a tag without a name just a class, indentation is bad, and contains inline CSS styles for the image</p>
     </figure>
 
 
     <h3>1.4. Use of CSS3 features e.g. flexbox, animations, CSS grid</h3>
-
     <p>This largely depends on the number of examples found in the code.</p>
 
-
     <h3>1.5. Tidy file and folder organisation with lower-case names</h3>
-
     <p>This should be fairly self-explanatory. Keep file and folder names lower-case and don't include any spaces or underscores (use hyphens if necessary). We normally expect you to keep your images, CSS, and JS files in a separate folder each. Don't include any unused files you used during development. Clean the repository for your final commit. Your main homepage must be called "index.html". This is necessary for GitHub Pages to work and most web servers too.</p>
 
     <figure>
@@ -192,7 +150,6 @@
       <img src="screenshots/dir0-1.png">
       <figcaption>not addressed</figcaption>
     </figure>
-
     <figure>
       <img src="screenshots/dir0-2.png">
       <figcaption>not addressed</figcaption>
@@ -202,7 +159,6 @@
       <img src="screenshots/dir1.png">
       <figcaption>partially addressed</figcaption>
     </figure>
-
     <figure>
       <img src="screenshots/dir1-1.png">
       <figcaption>partially addressed</figcaption>
@@ -212,12 +168,10 @@
       <img src="screenshots/dir2.png">
       <figcaption>fully addressed</figcaption>
     </figure>
-
     <figure>
       <img src="screenshots/dir2-1.png">
       <figcaption>fully addressed</figcaption>
     </figure>
-
     <figure>
       <img src="screenshots/dir2-2.png">
       <figcaption>fully addressed</figcaption>
@@ -230,17 +184,19 @@
     <h2>2. JavaScript, APIs & JSON</h2>
 
     <h3>2.1. No JavaScript errors in the browser console</h3>
-
-
+    <p>This largely depends on the number of instances found in the console and the severity of the errors. Errors that break functionality are worse than warnings for example.</p>
 
     <h3>2.2. Use of JavaScript for DOM manipulation and/or interaction</h3>
-
+    <p>This largely depends on how JS was used. For instance if the only JavaScript you use is the Google maps script that you can copy and paste from Google with very minor customisation (e.g. coords) then that will only get you to "partially addressed". Using JavaScript to make a proper API call to get some JSON data for exampple will very likely get you to "fully addressed" (unless it actually doesn't work and contains many errors). An alert box does not really count as "DOM manipulation" so would get "not addressed".</p>
+    <p>Please not that PHP scripts for contact forms are unmarked - we will ignore them completely. It's not going to affect your mark to have a non-functional contact form.</p>
 
     <h3>2.3. ES6 syntax: e.g.  "let" and "const" over "var", template literals, arrow functions</h3>
 
 
     <h3>2.4. Use of JavaScript to handle data (e.g. JSON from an external API)</h3>
-
+    <p>As mentioned briefly above in point 2.2 using a Google map in not technically handling JSON data via an API, so this might only get you "partially addressed" (depends on how much you customise the map for instance).</p>
+    <p>There are many services out there with APIs such as image sites, news providers, weather services, video providers, etc.</p>
+    <p>The use of the Google Fonts API does not count towards this point.</p>
 
     <h3>2.5. DRY code e.g. no repeated similar functions without parameters</h3>
 
@@ -257,9 +213,13 @@
     <h2>3. Responsiveness, Accessibility and Interaction</h2>
 
     <h3>3.1. Responsive at any size with mobile-first CSS breakpoints</h3>
+
     <h3>3.2. Well-ordered information architecture, ease of navigation at all sizes</h3>
+
     <h3>3.3. Web accessibility (e.g. HTML5 semantic elements, "alt" attributes, heading structure, etc.)</h3>
+
     <h3>3.4. Coherence of overall design - colour, content, styles, etc.</h3>
+
     <h3>3.5. CSS layout of HTML5 elements e.g. no tables</h3>
   </section>
 
@@ -268,11 +228,94 @@
   <section>
     <h2>4. GIT & GitHub</h2>
 
+    <!-- TODO: check if publishing these is ok, as they are searchable via GitHub if repo is public -->
+    
+    <figure>
+      <a class="logs" href="logs/not.log">view log here</a>
+      <figcaption>not addressed</figcaption>
+      <p>very few commits, most on day of deadline, uploaded files via upload interface (rather than CLI)</p>
+    </figure>
+    <figure>
+      <a class="logs" href="logs/not-1.log">view log here</a>
+      <figcaption>not addressed</figcaption>
+      <p>very few commits, most on day of deadline</p>
+    </figure>
+    <figure>
+      <a class="logs" href="logs/not-2.log">view log here</a>
+      <figcaption>not addressed</figcaption>
+      <p>few commits in three days before deadline, poor commit messages</p>
+    </figure>
+
+    <figure>
+      <a class="logs" href="logs/part.log">view log here</a>
+      <figcaption>partially addressed</figcaption>
+      <p>few commits but spread out over a slightly longer period, good commit messages</p>
+    </figure>
+    <figure>
+      <a class="logs" href="logs/part-1.log">view log here</a>
+      <figcaption>partially addressed</figcaption>
+      <p>decent amount of commits although many on the day before the deadline, poor commit messages, note also some experiment with a branch but only to update readme</p>
+    </figure>
+    <figure>
+      <a class="logs" href="logs/part-2.log">view log here</a>
+      <figcaption>partially addressed</figcaption>
+      <p>good number of commits spread out over time periods, poor commit messages, note also some experiment with a branch but only to update readme</p>
+    </figure>
+
+    <figure>
+      <a class="logs" href="logs/full.log">view log here</a>
+      <figcaption>fully addressed</figcaption>
+      <p>good number of commits spread out well over time, very good commit messages</p>
+    </figure>
+    <figure>
+      <a class="logs" href="logs/full-1.log">view log here</a>
+      <figcaption>fully addressed</figcaption>
+      <p>excellent number of commits although about half in the last three days before deadline, brief but acceptable commit messages</p>
+    </figure>
+    <figure>
+      <a class="logs" href="logs/full-2.log">view log here</a>
+      <figcaption>fully addressed</figcaption>
+      <p>excellent number of commits spread over time, very good commit messages, note also excellent use of branching for feature development</p>
+    </figure>
+
     <h3>4.1. Source code and live site on GitHub Pages</h3>
+    <p>This should be "fully addressed" for all of you if you've managed to set up your GitHub Classroom repo properly and enables GitHub Pages in the settings. This is really only for some cases were students simply haven't followed these instructions at all and end up submitting a zip file via email (yes, we've seen it all).</p>
+
     <h3>4.2. Use of GIT branches for feature development</h3>
+    <p>Branches are slightly more advanced feature of git. They should normally be used for feature development (e.g. a new JavaScript feature, or a re-design half way through).</p>
+    <p>"Partially addressed" would be given if there's been some experiments with branches but perhaps incorrectly (e.g. not actually merged back into the master branch, or a branch for a single change in the readme just for the sake of using a branch last minute).</p>
+    <p>"Fully addressed" would be given to any amount of branches that are sensible.</p>
+
     <h3>4.3. Regular commits, not all last few days</h3>
+    <p>There isn't a set amount of commits you have to create in order to get "partially" or "fully addressed" here. It is possible to get full marks for this component if you have ten excellent commits, with very good commit messages spread out over a decent period to show progress.</p>
+
     <h3>4.4. Brief, informative commit messages</h3>
-    <h3>4.5. Basic readme.md file with references in markdown format (see NOTES)</h3>
+    <p>Look at the examples above to get an idea of what would be considered bad, good, and excellent commit messages.</p>
+
+    <h3>4.5. Basic readme.md file with references in markdown format</h3>
+    <p>The readme ("readme.md" or "README.md") should contain some key information about your repository and website in valid MarkDown text.</p>
+    <p><strong>Mini MarkDown Cheatsheet:</strong></p>
+    <pre><code>
+    # Heading 1
+    ## Heading 2, etc
+    [link text](https://link.url)
+    ![image alt text](folder/image.png)
+    - bullet 1
+    - bullet 2, etc
+    1. numbered item 1
+    2. numbered item 2, etc
+    </code></pre>
+    <p>The content of your readme is very individual and depends on your site, the issues you've faced, etc. But at the very least you should include references here to any external sources you've used (e.g. images, text content, embeded videos, API code, code examples from CodePen, W3Schools or other sources, etc.) Note that this does not have to be in Harvard referencing format but could simply be a url with a short description of what it was used for, for example:</p>
+    <pre><code>
+    # References
+    - image gallery code taken from [here](https://link.url)
+    - Google maps code taken from [here](https://link.url)
+    </code></pre>
+    The beauty of GitHub is that if your readme file is named  and formatted correctly then GitHub will automatically display it nicely on your repo website.
+
+    
+
+
   </section>
 
   <hr>
@@ -293,13 +336,13 @@
     <figure>
       <img src="screenshots/silly0-2.png">
       <figcaption>lots of redundat code</figcaption>
-      <p>note the strange indentation (probably tabs rather than spaces used), the amount of reduncant code (e.g. the menu div is completely unnecessary) often the HTML tag can be styled directly without a class or id. no real need to make the menu a <code><ul></code> either.</p>
+      <p>note the strange indentation (probably tabs rather than spaces used), the amount of reduncant code (e.g. the menu div is completely unnecessary) often the HTML tag can be styled directly without a class or id. no real need to make the menu a <code>&lt;ul&gt;</code> either.</p>
     </figure>
 
     <figure>
       <img src="screenshots/silly0-4.png">
       <figcaption>messy</figcaption>
-      <p>note inconsistent indentation, the inline styles at the top, inline script in the middle (although fairly well commented), and the <code><br></code> tags at the bottom for layout (you should use CSS to pad things out)</p>
+      <p>note inconsistent indentation, the inline styles at the top, inline script in the middle (although fairly well commented), and the <code>&lt;br&gt;</code> tags at the bottom for layout (you should use CSS to pad things out)</p>
     </figure>
 
     <figure>
@@ -340,22 +383,6 @@
   </footer>
 
 
-  <script>
-
-    const captions = document.getElementsByTagName("figcaption");
-    for(let i=0; i < captions.length; i++) {
-      captions[i].style.backgroundColor = "gray";
-      if(captions[i].innerHTML === "not addressed") {
-        captions[i].style.backgroundColor = "red";
-      }
-      if(captions[i].innerHTML === "partially addressed") {
-        captions[i].style.backgroundColor = "yellow";
-      }
-      if(captions[i].innerHTML === "fully addressed") {
-        captions[i].style.backgroundColor = "green";
-      }
-    }
-
-  </script>
+  <script src="scripts.js"></script>
 </body>
 </html>
