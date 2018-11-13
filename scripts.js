@@ -1,11 +1,12 @@
 const captions = document.getElementsByTagName("figcaption");
+const middles = document.getElementsByClassName("mid");
 const fails = ["not addressed", "0-10", "10-20", "20-30", "30-40"];
 const passes = ["partially addressed", "40-50", "50-60", "60-70"];
 const firsts = ["fully addressed", "70-80", "90-100"];
 
 for(let i=0; i < captions.length; i++) {
   const cap = captions[i];
-  captions[i].style.backgroundColor = "gray";
+  cap.style.backgroundColor = "gray";
   if(fails.includes(cap.innerHTML)) {
     cap.style.backgroundColor = "red";
   }
@@ -17,3 +18,16 @@ for(let i=0; i < captions.length; i++) {
   }
 }
 
+for(let i=0; i < middles.length; i++) {
+  const mid = middles[i];
+  mid.style.backgroundColor = "gray";
+  if(fails.includes(mid.innerHTML)) {
+    mid.style.backgroundColor = "red";
+  }
+  if(passes.includes(mid.innerHTML)) {
+    mid.style.backgroundColor = "yellow";
+  }
+  if(firsts.includes(mid.innerHTML)) {
+    mid.style.backgroundColor = "green";
+  }
+}
