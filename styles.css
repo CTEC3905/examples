@@ -10,23 +10,24 @@ figure {
   margin: .5em 0;
 }
 figcaption {
-  padding: 1em 0;
+  padding: 1em;
   text-align: center;
   max-width: 400px;
   margin-bottom: 0;
 }
 figure p {
+  box-sizing: border-box;
   background-color: #ccc;
-  padding: 0;
+  padding: 1em;
   max-width: 400px;
   margin: 0 0 1em 0;
 }
-.logs {
+.logs, .top {
   display: inline-block;
   text-align: center;
   width: 100%;
   margin: 0;
-  padding: 1em 0;
+  padding: 1em;
   background-color: #eee;
 }
 code {
@@ -35,9 +36,23 @@ code {
 pre {
   background-color: #eee;
 }
+nav {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+nav a {
+  background-color: #ccc;
+  margin: .5em;
+  padding: .5em;
+}
 
 @media screen and (min-width: 500px) {
   body, figure {
     margin: 1em;
+  }
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

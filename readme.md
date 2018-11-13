@@ -1,3 +1,7 @@
-# References
-  - image gallery code taken from [here](https://link.url)
-  - Google maps code taken from [here](https://link.url)
+# Examples
+
+This document shows examples of how each point in the marking scheme will be categorised into one of the following three choices:
+
+- not addressed
+- partially addressed
+- fully addressed
