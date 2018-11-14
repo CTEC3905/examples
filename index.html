@@ -94,21 +94,45 @@
     <p>Try and fix any errors and address warnings that are raised by the validator. Mostly this will catch serious syntax errors but it also points the way to good practice in general.</p>
     <p>For the HTML validation, errors must be avoided completely to get "partially" or "fully addressed". Warnings are less severe but you should still try to address them.</p>
     <p>Depending on the amount of CSS errors you have you might still get "partially addressed" if they are minor (or for example are to do with browser compatibility). Again warnings are less severe but you should still try to address them.</p>
+    <p><strong>Validation is your friend! Use it often!</strong></p>
+    <p>Often, programmer's text editors will highlight syntax errors as shown below (either by squiggly underline or by a change in colouring (e.g. white text instead of green). This can help you debug your code.</p>
+    <section class="grid logs">
+      <div class="not">
+        <img class="top" src="screenshots/html-no-code.png">
+        <p class="mid">HTML code with 2 errors</p>
+        <p class="bot">note the missing closing <code>&gt;</code> bracket of the <code>p</code> tag on line 96, and the typo on line 99 showing an opening <code>t</code> tag instead of a <code>p</code> tag</p>
+      </div>
+      <div class="part">
+        <img class="top" src="screenshots/html-no.png">
+        <p class="mid">HTML code validation results</p>
+        <p class="bot">the validation for the HTML code shown just now highlights several issues, for instance a warning about the section missing a heading which can be ignored, but also error 2 which indicates to the missing bracket on line 96, error 4 points to the erroneous <code>t</code> tag, the other errors here are actually propagation errors</p>
+      </div>
+      <div class="full">
+        <img class="top" src="screenshots/css-no-code.png">
+        <p class="mid">CSS code with 3 errors</p>
+        <p class="bot">note the typo on line 58, the missing semi-colon on line 64, and the extra closing brace on line 70</p>
+      </div>
+      <div class="full">
+        <img class="top" src="screenshots/css-no.png">
+        <p class="mid">CSS validation results</p>
+        <p class="bot">the validation results here highlight very precisely were those errors are and even gives an idea of how to fix them</p>
+      </div>
+    </section>
     <section class="grid">
       <div class="not">
         <p class="top">many errors in both HTML and CSS</p>
         <p class="mid">not addressed</p>
-        <p class="bot"></p>
+        <p class="bot">several errors in HTML or CSS, many of which could have been easily fixed or avoided and no attempt at fixing is evident</p>
       </div>
       <div class="part">
         <p class="top">very few errors in either</p>
         <p class="mid">partially addressed</p>
-        <p class="bot"></p>
+        <p class="bot">some minor obscure errors (with attempts to fix them clearly shown for example in the console)</p>
       </div>
       <div class="full">
         <p class="top">no errors in HTML or CSS</p>
         <p class="mid">fully addressed</p>
-        <p class="bot"></p>
+        <p class="bot">we would expect there to be no errors in either the HTML or the CSS for this category</p>
       </div>
     </section>
 
