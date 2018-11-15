@@ -46,18 +46,41 @@ for(let e=0; e < exs.length; e++) {
 }
 
 
-// modals for large images
-const imgs = document.querySelectorAll("[id^=img]");
-const modals = document.querySelectorAll("[id^=modal]");
-for(let i=0; i < imgs.length; i++){
-  imgs[i].addEventListener("click", function() {
-    // modals[i].style.display = "flex";
-    modals[i].classList.remove("hide");
+// better modals for all images
+const images = document.getElementsByTagName("img");
+for(let i=0; i < images.length; i++){
+  images[i].addEventListener("click", toggleModal);
+}
+function toggleModal() {
+  let modal = document.createElement("div");
+  document.body.appendChild(modal);
+  modal.id = "modal";
+  let img = event.srcElement.cloneNode();
+  modal.appendChild(img);
+  modal.addEventListener("click", () => {
+    document.body.removeChild(modal);
   });
 }
-for(let i=0; i < modals.length; i++){
-  modals[i].addEventListener("click", function() {
-    // modals[i].style.display = "none";
-    modals[i].classList.add("hide");
-  });
-}
+
+
+// print css
+let link = document.createElement("link");
+link.setAttribute("rel", "stylesheet");
+link.setAttribute("href", "rubric.css");
+link.setAttribute("media", "print");
+const printRubric = document.getElementById("rubric");
+const printAll = document.getElementById("everything");
+printRubric.addEventListener("click", () => {
+  document.head.appendChild(link);
+  setTimeout(() => {
+    window.print();
+  }, 500);  // 0.5 seconds
+  setTimeout(() => {
+    document.head.removeChild(link);
+  }, 500);  // 0.5 seconds
+});
+printAll.addEventListener("click", () => {
+  window.print();
+});
+
+
