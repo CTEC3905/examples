@@ -8,5 +8,8 @@ for(let i=1; i <= imgs.length; i++){
 }
 
 
-    modals[i].classList.add("block");
-    .block { display: block }
+modals[i].classList.add("block");
+.block { display: block }
+
+
+

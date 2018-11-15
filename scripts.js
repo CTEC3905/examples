@@ -45,3 +45,19 @@ for(let e=0; e < exs.length; e++) {
   exs[e].appendChild(node);
 }
 
+
+// modals for large images
+const imgs = document.querySelectorAll("[id^=img]");
+const modals = document.querySelectorAll("[id^=modal]");
+for(let i=0; i < imgs.length; i++){
+  imgs[i].addEventListener("click", function() {
+    modals[i].style.display = "flex";
+    // modals[i].classList.add("show");
+  });
+}
+for(let i=0; i < modals.length; i++){
+  modals[i].addEventListener("click", function() {
+    modals[i].style.display = "none";
+    // modals[i].classList.remove("show");
+  });
+}
