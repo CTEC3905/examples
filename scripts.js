@@ -64,6 +64,7 @@ function toggleModal() {
 
 
 // print css
+let heading = document.getElementById("heading");
 let link = document.createElement("link");
 link.setAttribute("rel", "stylesheet");
 link.setAttribute("href", "rubric.css");
@@ -72,11 +73,13 @@ const printRubric = document.getElementById("rubric");
 const printAll = document.getElementById("everything");
 printRubric.addEventListener("click", () => {
   document.head.appendChild(link);
+  heading.innerText = "CTEC3905 Marking Rubric";
   setTimeout(() => {
     window.print();
   }, 500);  // 0.5 seconds
   setTimeout(() => {
     document.head.removeChild(link);
+    heading.innerText = "CTEC3905 Past Student Work";
   }, 500);  // 0.5 seconds
 });
 printAll.addEventListener("click", () => {
