@@ -1,0 +1,12 @@
+const imgs = document.querySelectorAll("[id^=img]");
+const modals = document.querySelectorAll("[id^=modal]");
+for(let i=1; i <= imgs.length; i++){
+  imgs[i].addEventListener("click", function() {
+    modals[i].style.display = "block";
+
+  })
+}
+
+
+    modals[i].classList.add("block");
+    .block { display: block }

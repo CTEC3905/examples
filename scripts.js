@@ -1,3 +1,4 @@
+// colouring for grade categories
 const captions = document.getElementsByTagName("figcaption");
 const middles = document.getElementsByClassName("mid");
 const fails = ["not addressed", "0-10", "10-20", "20-30", "30-40"];
@@ -31,3 +32,16 @@ for(let i=0; i < middles.length; i++) {
     mid.style.backgroundColor = "green";
   }
 }
+
+
+// numbers for example gifs
+const exs = document.querySelectorAll("[id^=example]");
+for(let e=0; e < exs.length; e++) {
+  let node = document.createElement("div");
+  let num = parseInt(e) + 1;
+  let textnode = document.createTextNode(num);
+  node.appendChild(textnode);
+  node.classList.add("num");
+  exs[e].appendChild(node);
+}
+

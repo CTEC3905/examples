@@ -59,13 +59,14 @@ nav a {
   justify-content: space-around;
   border: .5px solid black;
 }
-.not, .part, .full, .log {
+.not, .part, .full, .log, .sam {
   display: flex;
   flex-direction: column;
   margin: .5em;
 }
 .shots {
   margin: .5em;
+  position: relative;
 }
 .grid p {
   box-sizing: border-box;
@@ -82,8 +83,18 @@ nav a {
 }
 .bot {
   background-color: #ccc;
-  flex-grow: 1;
 }
+.num {
+  position: absolute;
+  bottom: 0; left: 0;
+  height: 50px; width: 50px;
+  font-size: 3em;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border-radius: 0 100% 0 0;
+}
+
 
 @media screen and (min-width: 500px) {
   body {
@@ -96,10 +107,36 @@ nav a {
   .grid {
     flex-direction: row;
   }
-  .logs {
+  .logs, .samples {
     flex-wrap: wrap;
   }
   .log {
     width: 30%;
+  }
+  .bot {
+    flex-grow: 1;
+  }
+  .samples .bot {
+    flex-grow: 0;
+  }
+}
+
+@media print {
+  p, ul, hr, nav, img, code, strong, .grid.samples, .grid.logs, #design, #issues {
+    display: none;
+  }
+  h1, h2, h3, .grid.grades, .grid.grades p {
+    display: block;
+  }
+  .grid.grades {
+    display: flex;
+    flex-direction: row;
+  }
+  .grid.grades div {
+    max-width: 30%;
+  }
+  .grid.grades.not, .grid.grades.part, .grid.grades.full {
+    display: flex;
+    flex-direction: column;
   }
 }
