@@ -456,38 +456,42 @@ for(let i=1; i &lt;= imgs.length; i++){
     <h2 id="rwd">3. Responsiveness, Accessibility and Interaction</h2>
 
     <h3>3.1. Responsive at any size with mobile-first CSS breakpoints</h3>
+    <p>The starter code we have provided you with contains two breakpoints (<code>@media</code> rules in the CSS) in a mobile first style. This means that any styles for mobile go above (and outside of) the two media queries, any styles for tablet size devices should go into the first media query and styles for desktop monitors should go into the bottom media query.</p>
+    <p>Most websites will not need any more breakpoints unless you have a very complex laypout. In fact you may not need the intermediary "tablet" size breakpoint even.</p>
+    <p>There is no set number of breakpoints but we recommend either 1 or 2. For any specific extra breakpoints please explain in a code comment why they are needed.</p>
     <section class="grid grades">
       <div class="not">
-        <p class="top"></p>
+        <p class="top">no attempt or very poor attempt at responsive design</p>
         <p class="mid">not addressed</p>
-        <p class="bot"></p>
+        <p class="bot">no attempt at all, or very poor attempt (for example having broken media queries, lots of duplicate breakpoints, broken code inside media queries, etc.)</p>
       </div>
       <div class="part">
-        <p class="top"></p>
+        <p class="top">attempts at responsive design with some issues perhaps or desktop first styles</p>
         <p class="mid">partially addressed</p>
-        <p class="bot"></p>
+        <p class="bot">there may be a mixture of media queries (perhaps in desktop first style), maybe an excessive number of breakpoints, or the changes made are very minimal (e.g. no substantial change in layout)</p>
       </div>
       <div class="full">
-        <p class="top"></p>
+        <p class="top">fully responsive and mobile first</p>
         <p class="mid">fully addressed</p>
-        <p class="bot"></p>
+        <p class="bot">content is clearly readable on mobile and adapted to fit larger screen sizes by using more complex layout such as two or three column designs, styles are mobile first and appropriate number or breakpoints are used</p>
       </div>
     </section>
 
     <h3>3.2. Well-ordered information architecture, ease of navigation at all sizes</h3>
+    <p>This largely refers to the site navigation, i.e. the menu. This needs to adjust to different screen sizes, for instance by having a "hamburger" menu on mobile, and has to be well organised.</p>
     <section class="grid grades">
       <div class="not">
-        <p class="top"></p>
+        <p class="top">very poorly designed and non-responsive navigation</p>
         <p class="mid">not addressed</p>
-        <p class="bot"></p>
+        <p class="bot">might be very simple or inconsistent menu with no attempt to make it mobile friendly (or vice versa: having a "hamburger" menu on desktop screens is poor design)</p>
       </div>
       <div class="part">
         <p class="top"></p>
         <p class="mid">partially addressed</p>
-        <p class="bot"></p>
+        <p class="bot">this may be a very well designed menu that fails to adapt to different screen sizes, or </p>
       </div>
       <div class="full">
-        <p class="top"></p>
+        <p class="top">excellent navigation functionality and design</p>
         <p class="mid">fully addressed</p>
         <p class="bot"></p>
       </div>
@@ -627,8 +631,6 @@ for(let i=1; i &lt;= imgs.length; i++){
 
     <h3>4.2. Use of GIT branches for feature development</h3>
     <p>Branches are slightly more advanced feature of git. They should normally be used for feature development (e.g. a new JavaScript feature, or a re-design half way through).</p>
-    <p>"Partially addressed" would be given if there's been some experiments with branches but perhaps incorrectly (e.g. not actually merged back into the master branch, or a branch for a single change in the readme just for the sake of using a branch last minute).</p>
-    <p>"Fully addressed" would be given to any amount of branches that are sensible.</p>
     <p>Here's some excellent resources on git branches:</p>
     <ul>
       <li><a href="https://www.atlassian.com/git/tutorials/using-branches">Atlassian Git Branch Tutorial</a></li>
@@ -636,43 +638,45 @@ for(let i=1; i &lt;= imgs.length; i++){
     </ul>
     <section class="grid grades">
       <div class="not">
-        <p class="top"></p>
+        <p class="top">no branches used</p>
         <p class="mid">not addressed</p>
-        <p class="bot"></p>
+        <p class="bot">no evidence of a branch or attempt to use a branch</p>
       </div>
       <div class="part">
-        <p class="top"></p>
+        <p class="top">branch used but incorrectly</p>
         <p class="mid">partially addressed</p>
-        <p class="bot"></p>
+        <p class="bot">a branch exists but was not merged correctly or was used in a very basic way</p>
       </div>
       <div class="full">
-        <p class="top"></p>
+        <p class="top">branching used appropriately</p>
         <p class="mid">fully addressed</p>
-        <p class="bot"></p>
+        <p class="bot">clear evidence of merged branches in git log</p>
       </div>
     </section>
 
     <h3>4.3. Regular commits, not all last few days</h3>
     <p>There isn't a set amount of commits you have to create in order to get "partially" or "fully addressed" here. It is possible to get full marks for this component if you have ten excellent commits, with very good commit messages spread out over a decent period to show progress.</p>
+    <p>We might "checkout" individual commits to verify progress if there are concerns about the integrity of the code (i.e. suspected plagiarism).</p>
+    <!-- <p>Plagiarism comments here?</p> -->
     <p>Here's an excellent resource on this topic in general:</p>
     <ul>
       <li><a href="https://sethrobertson.github.io/GitBestPractices/">Commit Often, Perfect Later, Publish Once: Git Best Practices</a></li>
     </ul>
     <section class="grid grades">
       <div class="not">
-        <p class="top"></p>
+        <p class="top">very few commits, close to deadline</p>
         <p class="mid">not addressed</p>
-        <p class="bot"></p>
+        <p class="bot">very few commits, most of the in the few days before the deadline, with no clear progress of code progression seen</p>
       </div>
       <div class="part">
-        <p class="top"></p>
+        <p class="top">average amount of commits, several close to deadline</p>
         <p class="mid">partially addressed</p>
-        <p class="bot"></p>
+        <p class="bot">might be few commits but nicely spread out, or many commits but all bunched together before deadline</p>
       </div>
       <div class="full">
-        <p class="top"></p>
+        <p class="top">a good number of commits throughout timeframe</p>
         <p class="mid">fully addressed</p>
-        <p class="bot"></p>
+        <p class="bot">should be a decent amount of commits well spread over time with a clear progression of code evident</p>
       </div>
     </section>
 
@@ -684,19 +688,19 @@ for(let i=1; i &lt;= imgs.length; i++){
     </ul>
     <section class="grid grades">
       <div class="not">
-        <p class="top"></p>
+        <p class="top">non-descriptive, short messages</p>
         <p class="mid">not addressed</p>
-        <p class="bot"></p>
+        <p class="bot">this may include commit messages that just number the commits or aren't explanative (e.g. "commit 1", "#2", etc. or "changes", "stuff")</p>
       </div>
       <div class="part">
-        <p class="top"></p>
+        <p class="top">a mix of non-descriptive and descriptive messages</p>
         <p class="mid">partially addressed</p>
-        <p class="bot"></p>
+        <p class="bot">this applies if a mix of messages is present, i.e. some that just say "change" and some that say "add mobile hamburger menu"</p>
       </div>
       <div class="full">
-        <p class="top"></p>
+        <p class="top">detailed descriptive messages</p>
         <p class="mid">fully addressed</p>
-        <p class="bot"></p>
+        <p class="bot">commit messages that clearly explain what the commit changes or fixes</p>
       </div>
     </section>
 
@@ -716,8 +720,8 @@ for(let i=1; i &lt;= imgs.length; i++){
     <p>The content of your readme is very individual and depends on your site, the issues you've faced, etc. But at the very least you should include references here to any external sources you've used (e.g. images, text content, embeded videos, API code, code examples from CodePen, W3Schools or other sources, etc.) Note that this does not have to be in Harvard referencing format but could simply be a url with a short description of what it was used for, for example:</p>
     <pre><code>
     # References
-    - image gallery code taken from [here](https://link.url)
-    - Google maps code taken from [here](https://link.url)
+    - image gallery code adapted from [here](https://link.url)
+    - Google maps code adapted from [here](https://link.url)
     </code></pre>
     <p>The beauty of GitHub is that if your readme file is named  and formatted correctly (and at the root of your repo, i.e. not in a sub-directory) then GitHub will automatically display it nicely on your repo website as shown below.</p>
     <figure>
@@ -726,19 +730,19 @@ for(let i=1; i &lt;= imgs.length; i++){
     </figure>
     <section class="grid grades">
       <div class="not">
-        <p class="top"></p>
+        <p class="top">no readme present or practically empty readme</p>
         <p class="mid">not addressed</p>
-        <p class="bot"></p>
+        <p class="bot">this may include cases where there is no readme, or where the readme contains only a heading and very little information, perhaps in wrong format, wrong name, etc.</p>
       </div>
       <div class="part">
-        <p class="top"></p>
+        <p class="top">good readme with minor issues</p>
         <p class="mid">partially addressed</p>
-        <p class="bot"></p>
+        <p class="bot">readme may be in incorrect MarkDown (so does not display properly), does not contain references, contains very sloppy, poor language, etc.</p>
       </div>
       <div class="full">
-        <p class="top"></p>
+        <p class="top">excellent readme in correct MarkDown</p>
         <p class="mid">fully addressed</p>
-        <p class="bot"></p>
+        <p class="bot">well structured readme in MarkDown format covering key details about the site (for example: acknowledgement of bugs, references to source code, images, or text content)</p>
       </div>
     </section>
 
