@@ -1,22 +1,16 @@
-/* @media print { */
-  p, ul, hr, nav, img, button, code, strong, .grid.samples, .grid.logs, #design, #issues {
-    display: none;
-  }
-  h1, h2, h3, .grid.grades, .grid.grades p {
-    display: block;
-  }
-  header h3 {
-    display: none;
-  }
-  .grid.grades {
-    display: flex;
-    flex-direction: row;
-  }
-  .grid.grades div {
-    max-width: 30%;
-  }
-  .grid.grades.not, .grid.grades.part, .grid.grades.full {
-    display: flex;
-    flex-direction: column;
-  }
-/* } */
+p, ul, hr, nav, img, button, code, strong, .grid.samples, .grid.logs, #design, #issues {
+  display: none;
+}
+h1, h2, h3, .grid.grades, .grid.grades p {
+  display: block;
+}
+header h3 {
+  display: none;
+}
+.grid.grades {
+  display: flex;
+  flex-direction: row;
+}
+.grid > div, .grid > figure, .sglimg {
+  max-width: 30%;
+}

@@ -25,6 +25,7 @@
 
     <p>This document is organised in order of the marking criteria and shows examples of each of the three categories ("not addressed", "partially addressed", and "fully addressed") for each of the points (if suitable).</p>
     <p>You can click on any image or gif to open a larger version in a modal, and click anywhere within the modal to hide it again.</p>
+
     <button id="rubric">Print Marking Criteria Only</button>
     <button id="everything">Print Everything</button>
 
@@ -46,44 +47,45 @@
 
     <p>Here are some examples of student work from the previous two years, with a rough idea of how they were marked overall.</p>
     <p>Please note that this <strong>only shows how the pages look</strong>, it <strong>doesn't show any animations or hover effects</strong>, and most of all it <strong>does not show the quality of the code</strong>. So some of the pages are marked higher or lower overall perhaps than you might expect due to underlying issues with the code. This includes for example <strong>API calls</strong> that bring in content dynamically from external sources which might not be clear from simply looking at the final design of the website.</p>
+
     <section class="grid logs">
-      <figure id="example1" class="shots">
+      <figure id="example1">
         <img src="screenshots/website10-20.gif">
         <figcaption>10-20</figcaption>
       </figure>
-      <figure id="example2" class="shots">
+      <figure id="example2">
         <img src="screenshots/website30-40.gif">
         <figcaption>30-40</figcaption>
       </figure>
-      <figure id="example3" class="shots">
+      <figure id="example3">
         <img src="screenshots/website40-50.gif">
         <figcaption>40-50</figcaption>
       </figure>
-      <figure id="example4" class="shots">
+      <figure id="example4">
         <img src="screenshots/website50-60.gif">
         <figcaption>50-60</figcaption>
       </figure>
-      <figure id="example5" class="shots">
+      <figure id="example5">
         <img src="screenshots/website60-70.gif">
         <figcaption>60-70</figcaption>
       </figure>
-      <figure id="example6" class="shots">
+      <figure id="example6">
         <img src="screenshots/website60-70-1.gif">
         <figcaption>60-70</figcaption>
       </figure>
-      <figure id="example7" class="shots">
+      <figure id="example7">
         <img src="screenshots/website70-80.gif">
         <figcaption>70-80</figcaption>
       </figure>
-      <figure id="example8" class="shots">
+      <figure id="example8">
         <img src="screenshots/website90-100-1.gif">
         <figcaption>90-100</figcaption>
       </figure>
-      <figure id="example9" class="shots">
+      <figure id="example9">
         <img src="screenshots/website90-100-2.gif">
         <figcaption>90-100</figcaption>
       </figure>
-      <figure id="example10" class="shots">
+      <figure id="example10">
         <img src="screenshots/website90-100.gif">
         <figcaption>90-100</figcaption>
       </figure>
@@ -96,213 +98,220 @@
     <h2 id="quality">1. HTML and CSS Code Quality</h2>
 
     <h3>1.1. Valid HTML5 and CSS3 source code throughout</h3> 
+
     <p>Try and fix any errors and address warnings that are raised by the validator. Mostly this will catch serious syntax errors but it also points the way to good practice in general.</p>
     <p>For the HTML validation, errors must be avoided completely to get "partially" or "fully addressed". Warnings are less severe but you should still try to address them.</p>
     <p>Depending on the amount of CSS errors you have you might still get "partially addressed" if they are minor (or for example are to do with browser compatibility). Again warnings are less severe but you should still try to address them.</p>
     <p><strong>Validation is your friend! Use it often!</strong></p>
     <p>Often, programmer's text editors will highlight syntax errors as shown below (either by squiggly underline or by a change in colouring (e.g. white text instead of green). This can help you debug your code.</p>
+
     <section class="grid samples">
-      <div class="sam">
-        <img class="top" src="screenshots/html-no-code.png">
-        <p class="mid">HTML code with 2 errors</p>
-        <p class="bot">note the missing closing <code>&gt;</code> bracket of the <code>p</code> tag on line 96, and the typo on line 99 showing an opening <code>t</code> tag instead of a <code>p</code> tag</p>
+      <div>
+        <figure>
+          <img src="screenshots/html-no-code.png">
+          <figcaption>HTML code with 2 errors</figcaption>
+        </figure>
+        <p class="figdetails">note the missing closing <code>&gt;</code> bracket of the <code>p</code> tag on line 96, and the typo on line 99 showing an opening <code>t</code> tag instead of a <code>p</code> tag</p>
       </div>
-      <div class="sam">
-        <img class="top" src="screenshots/html-no.png">
-        <p class="mid">HTML code validation results</p>
-        <p class="bot">the validation for the HTML code shown just now highlights several issues, for instance a warning about the section missing a heading which can be ignored, but also error 2 which indicates to the missing bracket on line 96, error 4 points to the erroneous <code>t</code> tag, the other errors here are actually propagation errors</p>
+      <div>
+        <figure>
+          <img src="screenshots/html-no.png">
+          <figcaption>HTML code validation results</figcaption>
+        </figure>
+        <p class="figdetails">the validation for the HTML code shown just now highlights several issues, for instance a warning about the section missing a heading which can be ignored, but also error 2 which indicates to the missing bracket on line 96, error 4 points to the erroneous <code>t</code> tag, the other errors here are actually propagation errors</p>
       </div>
-      <div class="sam">
-        <img class="top" src="screenshots/css-no-code.png">
-        <p class="mid">CSS code with 3 errors</p>
-        <p class="bot">note the typo on line 58, the missing semi-colon on line 64, and the extra closing brace on line 70</p>
+      <div>
+        <figure>
+          <img src="screenshots/css-no-code.png">
+          <figcaption>CSS code with 3 errors</figcaption>
+        </figure>
+        <p class="figdetails">note the typo on line 58, the missing semi-colon on line 64, and the extra closing brace on line 70</p>
       </div>
-      <div class="sam">
-        <img class="top" src="screenshots/css-no.png">
-        <p class="mid">CSS validation results</p>
-        <p class="bot">the validation results here highlight very precisely were those errors are and even gives an idea of how to fix them</p>
+      <div>
+        <figure>
+          <img src="screenshots/css-no.png">
+          <figcaption>CSS validation results</figcaption>
+        </figure>
+        <p class="figdetails">the validation results here highlight very precisely were those errors are and even gives an idea of how to fix them</p>
       </div>
     </section>
+
     <section class="grid grades">
-      <div class="not">
-        <p class="top">many errors in both HTML and CSS</p>
+      <div>
         <p class="mid">not addressed</p>
         <p class="bot">several errors in HTML or CSS, many of which could have been easily fixed or avoided and no attempt at fixing is evident</p>
       </div>
-      <div class="part">
-        <p class="top">very few errors in either</p>
+      <div>
         <p class="mid">partially addressed</p>
         <p class="bot">some minor obscure errors (with attempts to fix them clearly shown for example in the console)</p>
       </div>
-      <div class="full">
-        <p class="top">no errors in HTML or CSS</p>
+      <div>
         <p class="mid">fully addressed</p>
         <p class="bot">we would expect there to be no errors in either the HTML or the CSS for this category</p>
       </div>
     </section>
 
     <h3>1.2. Consistent code nesting and indentation (2 spaces is industry-standard)</h3>
+
     <p>If you are unsure about your indentation practice you can use a beautifier to indent your code for you (yes, we are essentially giving away marks here)! See links below:</p>
     <ul>
       <li><a href="https://codebeautify.org/">codebeautify.org</a></li>
       <li><a href="https://beautifier.io/">beautifier.io</a></li>
     </ul>
+
     <section class="grid samples">
-      <figure class="shots">
+      <figure>
         <img src="screenshots/indentation0.png">
         <figcaption>not addressed</figcaption>
       </figure>
-      <figure class="shots">
+      <figure>
         <img src="screenshots/indentation0-1.png">
         <figcaption>not addressed</figcaption>
       </figure>
-      <figure class="shots">
+      <figure>
         <img src="screenshots/indentation1.png">
         <figcaption>partially addressed</figcaption>
       </figure>
-      <figure class="shots">
+      <figure>
         <img src="screenshots/indentation2.png">
         <figcaption>fully addressed</figcaption>
       </figure>
     </section>
+
     <section class="grid grades">
-      <div class="not">
-        <p class="top">very messy indentation throughout</p>
+      <div>
         <p class="mid">not addressed</p>
         <p class="bot">very inconsistent indentation, possibly causing errors with closing brackets and tags, in more than one file</p>
       </div>
-      <div class="part">
-        <p class="top">some inconsistent indentation</p>
+      <div>
         <p class="mid">partially addressed</p>
         <p class="bot">a few minor and sporadic irregularities</p>
       </div>
-      <div class="full">
-        <p class="top">consistent indentation throughout</p>
+      <div>
         <p class="mid">fully addressed</p>
         <p class="bot">very consistent indentation in all files</p>
       </div>
     </section>
 
     <h3>1.3. Separate .css and .js files (e.g. no "style=" or "onclick" in HTML)</h3>
+
     <p>This is largely marked on amount of inline logic in the HTML. So for instance one occurance of "onclick" or a "width" declaration inside an <code>&lt;img&gt;</code> tag would be considered "partially addressed". Several instances of this would be "not addressed" and of course no inline styles or scripts would be "fully addressed".</p>
     <p>The examples below are taken out of context of the whole repository so I can't really show the grading element for these fairly. Suffice to say inline styles and scripts like these should not happen ever.</p>
+
     <section class="grid samples">
-      <div class="more">
+      <div>
         <figure>
           <img src="screenshots/inline0.png">
           <figcaption>depends on overall number</figcaption>
         </figure>
-        <p>note missing video tag instead of div, inline styles ("align" marked in red), spaces between attributes and values (e.g. <code>class = "VideoEmbed"</code> instead of <code>class="VideoEmbed"</code>), inline JS (onclick instead of eventListener)</p>
+        <p class="figdetails">note missing video tag instead of div, inline styles ("align" marked in red), spaces between attributes and values (e.g. <code>class = "VideoEmbed"</code> instead of <code>class="VideoEmbed"</code>), inline JS (onclick instead of eventListener)</p>
       </div>
-      <div class="more">
+      <div>
         <figure>
           <img src="screenshots/inline0-1.png">
           <figcaption>not addressed</figcaption>
         </figure>
-        <p>note excessive use of onclick, inline styles, the div with class "tab" should simply be a <code>&lt;nav&gt;</code> tag, the section with class "mainbody" should be a <code>&lt;main&gt;</code> tag</p>
+        <p class="figdetails">note excessive use of onclick, inline styles, the div with class "tab" should simply be a <code>&lt;nav&gt;</code> tag, the section with class "mainbody" should be a <code>&lt;main&gt;</code> tag</p>
       </div>
-      <div class="more">
+      <div>
         <figure>
           <img src="screenshots/silly0-1.png">
           <figcaption>depends on overall number</figcaption>
         </figure>
-        <p>note the setting of background colour inline and also the div with class "Header" should be a <code>&lt;header&gt;</code> tag, and the <code>&lt;b&gt;</code> tag should be a <code>&lt;strong&gt;</code> tag instead</p>
+        <p class="figdetails">note the setting of background colour inline and also the div with class "Header" should be a <code>&lt;header&gt;</code> tag, and the <code>&lt;b&gt;</code> tag should be a <code>&lt;strong&gt;</code> tag instead</p>
       </div>
-      <div class="more">
+      <div>
         <figure>
           <img src="screenshots/silly0-3.png">
           <figcaption>depends on overall number</figcaption>
         </figure>
-        <p>note line 51 shows a syntax error of a tag without a name just a class, indentation is bad, and contains inline CSS styles for the image</p>
+        <p class="figdetails">note line 51 shows a syntax error of a tag without a name just a class, indentation is bad, and contains inline CSS styles for the image</p>
       </div>
     </section>
+
     <section class="grid grades">
-      <div class="not">
-        <p class="top">several instances of inline styles and/or scripts</p>
+      <div>
         <p class="mid">not addressed</p>
         <p class="bot">there really is no need to include "onclick" triggers in the HTML or inline styles, so don't use them, or clean up any code you copy from tutorials that uses them - translate it into JavaScript or move the styles into your CSS stylesheet</p>
       </div>
-      <div class="part">
-        <p class="top">one or two minor instances</p>
+      <div>
         <p class="mid">partially addressed</p>
         <p class="bot">there has to be clear evidence otherwise of separate programming logic in separate files (e.g. handling eventListeners rather than "onlick", separate CSS file for styles)</p>
       </div>
-      <div class="full">
-        <p class="top">no inline styles or scripts</p>
+      <div>
         <p class="mid">fully addressed</p>
         <p class="bot">no instances of inline style manipulation or inline JavaScript (with the exception of scripts for website analytics, e.g. Facebook or Google Analytics widgets)</p>
       </div>
     </section>
 
     <h3>1.4. Use of CSS3 features e.g. flexbox, animations, CSS grid</h3>
+
     <p>This largely depends on the number and quality of examples found in the code. There isn't a specific number of features you have to include, but it should cover at least one of the examples above well. For example you can use advanced flexbox to create multi-column layouts that adapt to screen-size, or you add a few different animations to your site, or you layout the page with grids that adapt to screen size too.</p>
+
     <section class="grid grades">
-      <div class="not">
-        <p class="top">no CSS3 use</p>
+      <div>
         <p class="mid">not addressed</p>
         <p class="bot">only very basic CSS in general and no CSS3 features used at all, or very buggy or pointless (e.g. just slapping a <code>display: flex</code> on a random element with no effect</p>
       </div>
-      <div class="part">
-        <p class="top">basic CSS3 use</p>
+      <div>
         <p class="mid">partially addressed</p>
         <p class="bot">some attempts at using CSS3 features such as flexbox and animations but maybe slightly buggy or redundant, maybe contains an animation but includes lots of redundant vendor pre-fixes (e.g. "-webkit")</p>
       </div>
-      <div class="full">
-        <p class="top">advanced CSS3 use</p>
+      <div>
         <p class="mid">fully addressed</p>
         <p class="bot">good use of flexbox and or grids for layout, and/or good use of animations (e.g. rotating icons on hover, responsive grid layout, etc)</p>
       </div>
     </section>
 
     <h3>1.5. Tidy file and folder organisation with lower-case names</h3>
+
     <p>This should be fairly self-explanatory. Keep file and folder names lower-case and don't include any spaces or underscores (use hyphens if necessary). We normally expect you to keep your images, CSS, and JS files in a separate folder each. Don't include any unused files you used during development. Clean the repository for your final commit. Your main homepage must be called "index.html". This is necessary for GitHub Pages to work and most web servers too.</p>
+
     <section class="grid logs">
-      <figure class="shots">
+      <figure>
         <img src="screenshots/dir0.png">
         <figcaption>not addressed</figcaption>
       </figure>
-      <figure class="shots">
+      <figure>
         <img src="screenshots/dir0-1.png">
         <figcaption>not addressed</figcaption>
       </figure>
-      <figure class="shots">
+      <figure>
         <img src="screenshots/dir0-2.png">
         <figcaption>not addressed</figcaption>
       </figure>
-      <figure class="shots">
+      <figure>
         <img src="screenshots/dir1.png">
         <figcaption>partially addressed</figcaption>
       </figure>
-      <figure class="shots">
+      <figure>
         <img src="screenshots/dir1-1.png">
         <figcaption>partially addressed</figcaption>
       </figure>
-      <figure class="shots">
+      <figure>
         <img src="screenshots/dir2.png">
         <figcaption>fully addressed</figcaption>
       </figure>
-      <figure class="shots">
+      <figure>
         <img src="screenshots/dir2-1.png">
         <figcaption>fully addressed</figcaption>
       </figure>
-      <figure class="shots">
+      <figure>
         <img src="screenshots/dir2-2.png">
         <figcaption>fully addressed</figcaption>
       </figure>
     </section>
+
     <section class="grid grades">
-      <div class="not">
-        <p class="top">very messy repo structure</p>
+      <div>
         <p class="mid">not addressed</p>
         <p class="bot">this may include cases where all files are in the root directory, including code files and any other assetts such as images, or poorly organised folders overall, and file names may be inconsistent (lower-case, camel-case, upper-case, underscores, spaces, etc.), no <code>index.html</code> file</p>
       </div>
-      <div class="part">
-        <p class="top">some inconsistency</p>
+      <div>
         <p class="mid">partially addressed</p>
         <p class="bot">shows attempts at organising files well but has some issues, e.g. inconsistent naming convention, or some images outside of image folder</p>
       </div>
-      <div class="full">
-        <p class="top">very consistent and well organised repo</p>
+      <div>
         <p class="mid">fully addressed</p>
         <p class="bot">files are organised by type into sub-folders, file names are consistent and appropriate (e.g. no spaces, underscores)</p>
       </div>
@@ -317,103 +326,104 @@
     <p>Please note that you should only use native code e.g. no JQuery, Bootstrap, etc. External assets such as images, FontAwesome icons and Google fonts are acceptable.</p>
 
     <h3>2.1. No JavaScript errors in the browser console</h3>
+
     <p>This largely depends on the number of instances found in the console and the severity of the errors. Errors that break functionality are worse than warnings for example.</p>
     <p>It may be a good idea to include <code>console.log()</code> statements for debugging purposes. Remove them if things work out, or if not then leave them in to show your attempt of fixing them. Please also note that you should remove any <code>console.log()</code> statements before your site goes live as it is considered bad practice.</p>
     <p>Warnings can often be ignored as they're browser related, e.g. ad-block.</p>
+
     <section class="grid grades">
-      <div class="not">
-        <p class="top">several errors or no errors but no JS</p>
+      <div>
         <p class="mid">not addressed</p>
         <p class="bot">this might include errors that could be easily fixed, not linking files properly (e.g. typos, wrong paths or wrong file names) and cases were there are no errors but no JS was used at all</p>
       </div>
-      <div class="part">
-        <p class="top">some errors with clear attempts of fixing them</p>
+      <div>
         <p class="mid">partially addressed</p>
         <p class="bot">this applies if we can see that you've tried to fix the errors either by using <code>console.log()</code> statements or comments in the code</p>
       </div>
-      <div class="full">
-        <p class="top">no errors</p>
+      <div>
         <p class="mid">fully addressed</p>
         <p class="bot">note that this only applies if a decent amount of "handwritten" JavaScript was used; if all you've done is copy and paste some Google maps script then we can't give you full marks for not having errors</p>
       </div>
     </section>
 
     <h3>2.2. Use of JavaScript for DOM manipulation and/or interaction</h3>
+
     <p>This largely depends on how JS was used. The point of this crtieria is for you to use JS to manipluate some content on the HTML page, for instance feedback of user input from a form (e.g. user enters name, name gets printed into a paragraph on the page). An alert box does not really count as "DOM manipulation" so would get "not addressed".</p>
     <p>This also includes "tabbed" layouts that dynamically show or hide content and hamburger mobile menus that are shown or hidden via JS.</p>
     <p>Please not that PHP scripts for contact forms are unmarked - we will ignore them completely. It's not going to affect your mark to have a non-functional contact form.</p>
+
     <section class="grid grades">
-      <div class="not">
-        <p class="top">no JavaScript used or very basic copy & paste code only</p>
+      <div>
         <p class="mid">not addressed</p>
         <p class="bot">Google maps with minimal customisation (e.g. coords) does not count towards this or very basic attempts of including JS such as a single <code>alert()</code> statement</p>
       </div>
-      <div class="part">
-        <p class="top">basic use of DOM manipulation</p>
+      <div>
         <p class="mid">partially addressed</p>
         <p class="bot">not fully functional perhaps due to some errors or very simple (e.g. basic innerHTML use)</p>
       </div>
-      <div class="full">
-        <p class="top">advanced use of DOM manipulation</p>
+      <div>
         <p class="mid">fully addressed</p>
         <p class="bot">more than one instance of DOM manipulation or more advanced changes such as styling (not just content) (e.g. this document uses conditional colouring of figure captions, see <a href="scripts.js">scripts.js</a>)</p>
       </div>
     </section>
 
     <h3>2.3. ES6 syntax: e.g.  "let" and "const" over "var", template literals, arrow functions</h3>
+
     <section class="grid grades">
-      <div class="not">
-        <p class="top">no ES6 use</p>
+      <div>
         <p class="mid">not addressed</p>
         <p class="bot">code full of <code>var</code> and standard string concatenation (e.g. <code>'hello ' + name + '!'</code> instead of <code>`hello ${name}!`</code>), maybe even some JQuery</p>
       </div>
-      <div class="part">
-        <p class="top">some use of ES6 features but not consistently</p>
+      <div>
         <p class="mid">partially addressed</p>
         <p class="bot">inconsistent use, maybe even some JQuery</p>
       </div>
-      <div class="full">
-        <p class="top">advanced and consistent use of ES6</p>
+      <div>
         <p class="mid">fully addressed</p>
         <p class="bot">ES6 features used throughout and consistently, if no JS was used at all or very little you are not automatically getting full marks for one single instance of <code>let</code>, you have to show proficiency</p>
       </div>
     </section>
 
     <h3>2.4. Use of JavaScript to handle data (e.g. JSON from an external API)</h3>
+
     <p>As mentioned briefly above in point 2.2 using a Google map in not technically handling JSON data via an API, so this might only get you "partially addressed" (depends on how much you customise the map for instance).</p>
     <p>There are many services out there with APIs related to images, news, weather, videos, Wikipedia, translations, maps, etc.</p>
     <p><strong>The use of the Google Fonts API or embedded YouTube videos, or Twitter "widgets" do not count towards this point.</strong></p>
     <p>Although Google maps is used in the examples below it is not compulsory.</p>
+
     <section class="grid grades">
-      <div class="not">
-        <p class="top">no API or JSON use</p>
+      <div>
         <p class="mid">not addressed</p>
         <p class="bot">very basic Google map, possible as a inline script and with errors</p>
       </div>
-      <div class="part">
-        <p class="top">basic API and JSON use</p>
+      <div>
         <p class="mid">partially addressed</p>
         <p class="bot">well customised Google map, some other basic API use</p>
       </div>
-      <div class="full">
-        <p class="top">advanced API and JSON use</p>
+      <div>
         <p class="mid">fully addressed</p>
         <p class="bot">advanced API calls to get JSON data and display it on the page (e.g. populate an image gallery, change background image accroding to current weather, query Wikipedia and display top 3 results and related news articles from the Guardian, etc.</p>
       </div>
     </section>
 
     <h3>2.5. DRY code e.g. no repeated similar functions without parameters</h3>
+
     <p>Code can generally be divided into two categories: DRY and WET code. DRY stands for <strong>Don't Repeat Yourself</strong> and WET stands for <strong>Write Everything Twice</strong>. Industry best practice suggests you should use a DRY coding style instead of a WET one, as this is much more efficient and easier to debug and maintain.</p>
+
     <section class="grid samples">
-      <div class="sam">
-        <img class="top" src="screenshots/dry0.png">
-        <p class="mid">WET</p>
-        <p class="bot">you can clearly see the amount of duplication here that could have been prevented by writing a function with parameters</p>
+      <div>
+        <figure>
+          <img src="screenshots/dry0.png">
+          <figcaption>WET</figcaption>
+        </figure>
+        <p class="figdetails">you can clearly see the amount of duplication here that could have been prevented by writing a function with parameters</p>
       </div>
-      <div class="sam">
-        <img class="top" src="screenshots/dry0-1.png">
-        <p class="mid">WET</p>
-        <p class="bot">again, this could have easily been turned into a simple function. create two variables that hold the lists of images and modals, then loop through the images one by one and change the style for the corresponding modal</p>
+      <div>
+        <figure>
+          <img src="screenshots/dry0-1.png">
+          <figcaption>WET</figcaption>
+        </figure>
+        <p class="figdetails">again, this could have easily been turned into a simple function. create two variables that hold the lists of images and modals, then loop through the images one by one and change the style for the corresponding modal</p>
       </div>
     </section>
 
@@ -432,18 +442,15 @@ for(let i=1; i &lt;= imgs.length; i++){
     <p>This easily reduces down the roughly 200 lines of code the student had previously (only a tiny proportion is shown in the screenshot above) to 7 or 8.</p>
 
     <section class="grid grades">
-      <div class="not">
-        <p class="top">VERY WET code</p>
+      <div>
         <p class="mid">not addressed</p>
         <p class="bot">there is lots of repetitive code in both the CSS and JS perhaps, with no attempt to do intelligently loop through arrays of elements for example</p>
       </div>
-      <div class="part">
-        <p class="top">some WET code but also some DRY code</p>
+      <div>
         <p class="mid">partially addressed</p>
         <p class="bot">mostly DRY code but maybe with a few exceptions, but commented well or shown attempts at solving this more efficiently</p>
       </div>
-      <div class="full">
-        <p class="top">pure DRY code</p>
+      <div>
         <p class="mid">fully addressed</p>
         <p class="bot">fully DRY code, no repetition of code blocks</p>
       </div>
@@ -456,101 +463,104 @@ for(let i=1; i &lt;= imgs.length; i++){
     <h2 id="rwd">3. Responsiveness, Accessibility and Interaction</h2>
 
     <h3>3.1. Responsive at any size with mobile-first CSS breakpoints</h3>
+
     <p>The starter code we have provided you with contains two breakpoints (<code>@media</code> rules in the CSS) in a mobile first style. This means that any styles for mobile go above (and outside of) the two media queries, any styles for tablet size devices should go into the first media query and styles for desktop monitors should go into the bottom media query.</p>
     <p>Most websites will not need any more breakpoints unless you have a very complex laypout. In fact you may not need the intermediary "tablet" size breakpoint even.</p>
     <p>There is no set number of breakpoints but we recommend either 1 or 2. For any specific extra breakpoints please explain in a code comment why they are needed.</p>
+
     <section class="grid grades">
-      <div class="not">
-        <p class="top">no attempt or very poor attempt at responsive design</p>
+      <div>
         <p class="mid">not addressed</p>
         <p class="bot">no attempt at all, or very poor attempt (for example having broken media queries, lots of duplicate breakpoints, broken code inside media queries, etc.)</p>
       </div>
-      <div class="part">
-        <p class="top">attempts at responsive design with some issues perhaps or desktop first styles</p>
+      <div>
         <p class="mid">partially addressed</p>
         <p class="bot">there may be a mixture of media queries (perhaps in desktop first style), maybe an excessive number of breakpoints, or the changes made are very minimal (e.g. no substantial change in layout)</p>
       </div>
-      <div class="full">
-        <p class="top">fully responsive and mobile first</p>
+      <div>
         <p class="mid">fully addressed</p>
         <p class="bot">content is clearly readable on mobile and adapted to fit larger screen sizes by using more complex layout such as two or three column designs, styles are mobile first and appropriate number or breakpoints are used</p>
       </div>
     </section>
 
     <h3>3.2. Well-ordered information architecture, ease of navigation at all sizes</h3>
+
     <p>This largely refers to the site navigation, i.e. the menu. This needs to adjust to different screen sizes, for instance by having a "hamburger" menu on mobile, and has to be well organised.</p>
+
     <section class="grid grades">
-      <div class="not">
-        <p class="top">very poorly designed and non-responsive navigation</p>
+      <div>
         <p class="mid">not addressed</p>
         <p class="bot">might be very simple or inconsistent menu with no attempt to make it mobile friendly (or vice versa: having a "hamburger" menu on desktop screens is poor design)</p>
       </div>
-      <div class="part">
-        <p class="top"></p>
+      <div>
         <p class="mid">partially addressed</p>
-        <p class="bot">this may be a very well designed menu that fails to adapt to different screen sizes, or </p>
+        <p class="bot">this may be a very well designed menu that fails to adapt to different screen sizes, or a fairly basic collapsable menu that is used for all screen sizes</p>
       </div>
-      <div class="full">
-        <p class="top">excellent navigation functionality and design</p>
+      <div>
         <p class="mid">fully addressed</p>
-        <p class="bot"></p>
+        <p class="bot">a well organised navigation menu that adapts well to all screen sizes</p>
       </div>
     </section>
 
     <h3>3.3. Web accessibility (e.g. HTML5 semantic elements, "alt" attributes, heading structure, etc.)</h3>
+
     <section class="grid grades">
-      <div class="not">
-        <p class="top"></p>
+      <div>
         <p class="mid">not addressed</p>
-        <p class="bot"></p>
+        <p class="bot">no attempt or very poor attempt of web accessibility, that is, no or little semantic elements, no alt attributes, and poor structure of heading tags</p>
       </div>
-      <div class="part">
-        <p class="top"></p>
+      <div>
         <p class="mid">partially addressed</p>
-        <p class="bot"></p>
+        <p class="bot">some effort to include accessibility features but inconsistent</p>
       </div>
-      <div class="full">
-        <p class="top"></p>
+      <div>
         <p class="mid">fully addressed</p>
-        <p class="bot"></p>
+        <p class="bot">excellent use of semantic tags were applicable, descriptive alt attributes for any images, and clear hierarchical heading structure</p>
       </div>
     </section>
 
     <h3>3.4. Coherence of overall design - colour, content, styles, etc.</h3>
+
     <section class="grid grades">
-      <div class="not">
-        <p class="top"></p>
+      <div>
         <p class="mid">not addressed</p>
-        <p class="bot"></p>
+        <p class="bot">messy design, inconsistent spacing and colours</p>
       </div>
-      <div class="part">
-        <p class="top"></p>
+      <div>
         <p class="mid">partially addressed</p>
-        <p class="bot"></p>
+        <p class="bot">some attempts at creating a consistent theme for content layout and styles</p>
       </div>
-      <div class="full">
-        <p class="top"></p>
+      <div>
         <p class="mid">fully addressed</p>
-        <p class="bot"></p>
+        <p class="bot">content displayed on pages clearly and consistently according to PARC principles</p>
       </div>
     </section>
 
     <h3>3.5. CSS layout of HTML5 elements e.g. no tables</h3>
+    <p></p>
+
+    <section class="grid samples">
+      <div>
+        <figure>
+          <img src="screenshots/silly0-7.png">
+          <figcaption>not addressed</figcaption>
+        </figure>
+        <p class="figdetails">this is a goldmine: blockquote is used for centering an image, empty paragraphs with just a space (<code>&amp;nbsp;</code>) inside are used for spacing, and also: the images folder has a capital "I", the image name has spaces in it, and there's an inline script ("onmouseover")</p>
+      </div>
+    </section>
+
     <section class="grid grades">
-      <div class="not">
-        <p class="top"></p>
+      <div>
         <p class="mid">not addressed</p>
-        <p class="bot"></p>
+        <p class="bot">this includes use of tables for layout of content (unless this is actual tabular data), inappropriate use of <code>&lt;br&gt;</code> tags for spacing instead of margins and paddings, use of <code>&lt;blockquote&gt;</code> tags for centering, etc.</p>
       </div>
-      <div class="part">
-        <p class="top"></p>
+      <div>
         <p class="mid">partially addressed</p>
-        <p class="bot"></p>
+        <p class="bot">layout is generally done via CSS stylesheets but mostly based on the natural flow of HTML elements</p>
       </div>
-      <div class="full">
-        <p class="top"></p>
+      <div>
         <p class="mid">fully addressed</p>
-        <p class="bot"></p>
+        <p class="bot">layout is handled fully by CSS (flexbox or grids or other ways of positioning elements) in creative and responsive ways (e.g. not just keeping elements in their natural flow)</p>
       </div>
     </section>
   </section>
@@ -560,15 +570,14 @@ for(let i=1; i &lt;= imgs.length; i++){
   <section>
     <h2 id="git">4. GIT & GitHub</h2>
 
-    <!-- TODO: check if publishing these is ok, as they are searchable via GitHub if repo is public -->
     <section class="grid logs">
       <div class="log">
-        <p class="top"><a class="logs" href="logs/not.log">view log here</a></p>
+        <p class="top"><a href="logs/not.log">view log here</a></p>
         <p class="mid">not addressed</p>
         <p class="bot">very few commits, most on day of deadline, uploaded files via upload interface (rather than CLI)</p>
       </div>
       <div class="log">
-        <p class="top"><a class="logs" href="logs/not-1.log">view log here</a></p>
+        <p class="top"><a href="logs/not-1.log">view log here</a></p>
         <p class="mid">not addressed</p>
         <p class="bot">very few commits, most on day of deadline</p>
       </div>
@@ -610,51 +619,50 @@ for(let i=1; i &lt;= imgs.length; i++){
     </section>
 
     <h3>4.1. Source code and live site on GitHub Pages</h3>
+
     <p>This should be "fully addressed" for all of you if you've managed to set up your GitHub Classroom repo properly and enables GitHub Pages in the settings. This is really only for some cases were students simply haven't followed these instructions at all and end up submitting a zip file via email (yes, we've seen it all).</p>
+
     <section class="grid grades">
-      <div class="not">
-        <p class="top">no Git repo</p>
+      <div>
         <p class="mid">not addressed</p>
         <p class="bot">this only really applies to students who for some reason do not submit a GitHub repo and have no live site</p>
       </div>
-      <div class="part">
-        <p class="top">GitHub repo is ok but no GitHub Pages</p>
+      <div>
         <p class="mid">partially addressed</p>
         <p class="bot">the repo is ok and we can see the history of commits but the live "GitHub Pages" site does not work (perhaps because it has not been enabled) or because of errors in file paths or file names</p>
       </div>
-      <div class="full">
-        <p class="top">both the repo and live site are ok</p>
+      <div>
         <p class="mid">fully addressed</p>
         <p class="bot">properly set up repo and live site with no path or file name errors</p>
       </div>
     </section>
 
     <h3>4.2. Use of GIT branches for feature development</h3>
+
     <p>Branches are slightly more advanced feature of git. They should normally be used for feature development (e.g. a new JavaScript feature, or a re-design half way through).</p>
     <p>Here's some excellent resources on git branches:</p>
     <ul>
       <li><a href="https://www.atlassian.com/git/tutorials/using-branches">Atlassian Git Branch Tutorial</a></li>
       <li><a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell">Git Branching - Branches in a Nutshell</a></li>
     </ul>
+
     <section class="grid grades">
-      <div class="not">
-        <p class="top">no branches used</p>
+      <div>
         <p class="mid">not addressed</p>
         <p class="bot">no evidence of a branch or attempt to use a branch</p>
       </div>
-      <div class="part">
-        <p class="top">branch used but incorrectly</p>
+      <div>
         <p class="mid">partially addressed</p>
         <p class="bot">a branch exists but was not merged correctly or was used in a very basic way</p>
       </div>
-      <div class="full">
-        <p class="top">branching used appropriately</p>
+      <div>
         <p class="mid">fully addressed</p>
         <p class="bot">clear evidence of merged branches in git log</p>
       </div>
     </section>
 
     <h3>4.3. Regular commits, not all last few days</h3>
+
     <p>There isn't a set amount of commits you have to create in order to get "partially" or "fully addressed" here. It is possible to get full marks for this component if you have ten excellent commits, with very good commit messages spread out over a decent period to show progress.</p>
     <p>We might "checkout" individual commits to verify progress if there are concerns about the integrity of the code (i.e. suspected plagiarism).</p>
     <!-- <p>Plagiarism comments here?</p> -->
@@ -662,49 +670,47 @@ for(let i=1; i &lt;= imgs.length; i++){
     <ul>
       <li><a href="https://sethrobertson.github.io/GitBestPractices/">Commit Often, Perfect Later, Publish Once: Git Best Practices</a></li>
     </ul>
+
     <section class="grid grades">
-      <div class="not">
-        <p class="top">very few commits, close to deadline</p>
+      <div>
         <p class="mid">not addressed</p>
         <p class="bot">very few commits, most of the in the few days before the deadline, with no clear progress of code progression seen</p>
       </div>
-      <div class="part">
-        <p class="top">average amount of commits, several close to deadline</p>
+      <div>
         <p class="mid">partially addressed</p>
         <p class="bot">might be few commits but nicely spread out, or many commits but all bunched together before deadline</p>
       </div>
-      <div class="full">
-        <p class="top">a good number of commits throughout timeframe</p>
+      <div>
         <p class="mid">fully addressed</p>
         <p class="bot">should be a decent amount of commits well spread over time with a clear progression of code evident</p>
       </div>
     </section>
 
     <h3>4.4. Brief, informative commit messages</h3>
+
     <p>Look at the examples above to get an idea of what would be considered bad, good, and excellent commit messages.</p>
     <p>Normally, you should use <em>imperative</em> mood to write your messages, for example "add readme file" instead of "added readme file". Read this excellent resource on this if you'd like to know more:</p>
     <ul>
       <li><a href="https://chris.beams.io/posts/git-commit/">How to Write a Git Commit Message</a></li>
     </ul>
+
     <section class="grid grades">
-      <div class="not">
-        <p class="top">non-descriptive, short messages</p>
+      <div>
         <p class="mid">not addressed</p>
         <p class="bot">this may include commit messages that just number the commits or aren't explanative (e.g. "commit 1", "#2", etc. or "changes", "stuff")</p>
       </div>
-      <div class="part">
-        <p class="top">a mix of non-descriptive and descriptive messages</p>
+      <div>
         <p class="mid">partially addressed</p>
         <p class="bot">this applies if a mix of messages is present, i.e. some that just say "change" and some that say "add mobile hamburger menu"</p>
       </div>
-      <div class="full">
-        <p class="top">detailed descriptive messages</p>
+      <div>
         <p class="mid">fully addressed</p>
         <p class="bot">commit messages that clearly explain what the commit changes or fixes</p>
       </div>
     </section>
 
     <h3>4.5. Basic readme.md file with references in markdown format</h3>
+
     <p>The readme ("readme.md" or "README.md") should contain some key information about your repository and website in valid MarkDown text.</p>
     <p><strong>Mini MarkDown Cheatsheet:</strong></p>
     <pre><code>
@@ -724,23 +730,19 @@ for(let i=1; i &lt;= imgs.length; i++){
     - Google maps code adapted from [here](https://link.url)
     </code></pre>
     <p>The beauty of GitHub is that if your readme file is named  and formatted correctly (and at the root of your repo, i.e. not in a sub-directory) then GitHub will automatically display it nicely on your repo website as shown below.</p>
-    <figure>
-      <img src="screenshots/readme.png">
+    <img class="sglimg" src="screenshots/readme.png">
       <!-- <figcaption>readme.md</figcaption> -->
-    </figure>
+
     <section class="grid grades">
-      <div class="not">
-        <p class="top">no readme present or practically empty readme</p>
+      <div>
         <p class="mid">not addressed</p>
         <p class="bot">this may include cases where there is no readme, or where the readme contains only a heading and very little information, perhaps in wrong format, wrong name, etc.</p>
       </div>
-      <div class="part">
-        <p class="top">good readme with minor issues</p>
+      <div>
         <p class="mid">partially addressed</p>
         <p class="bot">readme may be in incorrect MarkDown (so does not display properly), does not contain references, contains very sloppy, poor language, etc.</p>
       </div>
-      <div class="full">
-        <p class="top">excellent readme in correct MarkDown</p>
+      <div>
         <p class="mid">fully addressed</p>
         <p class="bot">well structured readme in MarkDown format covering key details about the site (for example: acknowledgement of bugs, references to source code, images, or text content)</p>
       </div>
@@ -754,43 +756,41 @@ for(let i=1; i &lt;= imgs.length; i++){
     <h2 id="issues">General Issues</h2>
 
     <section class="grid logs">
-
-      <div class="more">
+      <div>
         <figure>
           <img src="screenshots/silly0.png">
           <figcaption>redundant class</figcaption>
         </figure>
-        <p>really no need to add a class to the table data tags, just style them directly</p>
+        <p class="figdetails">really no need to add a class to the table data tags, just style them directly</p>
       </div>
-      <div class="more">
+      <div>
         <figure>
           <img src="screenshots/silly0-2.png">
           <figcaption>lots of redundat code</figcaption>
         </figure>
-        <p>note the strange indentation (probably tabs rather than spaces used), the amount of reduncant code (e.g. the menu div is completely unnecessary) often the HTML tag can be styled directly without a class or id. no real need to make the menu a <code>&lt;ul&gt;</code> either.</p>
+        <p class="figdetails">note the strange indentation (probably tabs rather than spaces used), the amount of reduncant code (e.g. the menu div is completely unnecessary) often the HTML tag can be styled directly without a class or id. no real need to make the menu a <code>&lt;ul&gt;</code> either.</p>
       </div>
-      <div class="more">
+      <div>
         <figure>
           <img src="screenshots/silly0-4.png">
           <figcaption>messy</figcaption>
         </figure>
-        <p>note inconsistent indentation, the inline styles at the top, inline script in the middle (although fairly well commented), and the <code>&lt;br&gt;</code> tags at the bottom for layout (you should use CSS to pad things out)</p>
+        <p class="figdetails">note inconsistent indentation, the inline styles at the top, inline script in the middle (although fairly well commented), and the <code>&lt;br&gt;</code> tags at the bottom for layout (you should use CSS to pad things out)</p>
       </div>
-      <div class="more">
+      <div>
         <figure>
           <img src="screenshots/silly0-5.png">
           <figcaption>messy</figcaption>
         </figure>
-        <p>note the "max-width" and "width" inline styles at the top, and inline script below (although fairly well commented)</p>
+        <p class="figdetails">note the "max-width" and "width" inline styles at the top, and inline script below (although fairly well commented)</p>
       </div>
-      <div class="more">
+      <div>
         <figure>
           <img src="screenshots/silly0-6.png">
           <figcaption>out-of-date</figcaption>
         </figure>
-        <p>note the vendor prefixes (-webkit, -moz, -ms) which are not needed  since flexbox and transitions are supported in all browsers</p>
+        <p class="figdetails">note the vendor prefixes (-webkit, -moz, -ms) which are not needed  since flexbox and transitions are supported in all browsers</p>
       </div>
-
     </section>
   </section>
 
