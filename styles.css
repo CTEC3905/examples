@@ -1,13 +1,23 @@
 body {
   margin: 1em;
+  overflow-x: hidden;
 }
 img {
   object-fit: contain;
-  /* max-width: ; */
   max-height: 400px;
   max-width: 100%;
-  /* max-height: 375px; */
-  /* max-width: 375px; */
+}
+#banner {
+  background-color: crimson;
+  color: white;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  font-weight: bold;
 }
 code {
   white-space: pre;
@@ -31,9 +41,7 @@ nav a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /* margin: 2em 0; */
   margin: 2em -1em;
-  /* box-sizing: border-box; */
 }
 .grades {
   border: .5px solid black;
@@ -59,8 +67,6 @@ nav a {
 }
 figure {
   margin: 1em 0 0 0;
-  /* max-width: 375px; */
-  /* max-width: 100%; */
   text-align: center;
   background-color: #eee;
   box-sizing: border-box;
@@ -75,8 +81,6 @@ figcaption {
   margin: 0 0 1em 0;
   background-color: #ccc;
   padding: 1em;
-  /* max-width: 375px; */
-  /* max-width: 100%; */
 }
 .logs p {
   margin: 0;
@@ -145,6 +149,13 @@ figcaption {
   }
   .grid > div, .grid > figure, .sglimg {
     max-width: 30%;
+  }
+  #banner {
+    top: 50px;
+    right: -75px;
+    width: 300px;
+    bottom: inherit;
+    transform: rotate(45deg);
   }
 }
 
