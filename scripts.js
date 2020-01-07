@@ -82,7 +82,7 @@ printAll.addEventListener("click", () => {
 
 // deadline reminder
 const days = document.querySelector("#banner span");
-const deadline = new Date("January 07, 2019 16:00:00");
+const deadline = new Date("April 03, 2020 16:00:00");
 let today = new Date();
 const oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
 let diff = Math.floor((deadline - today) / oneDay);
